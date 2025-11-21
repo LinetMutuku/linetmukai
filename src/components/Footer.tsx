@@ -92,11 +92,7 @@ const Footer = () => {
 
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-slate-400 text-sm text-center md:text-left">
-            © 2024 Linet Mukai Mutuku. Built with{' '}
-            <Heart className="inline w-4 h-4 text-red-500 fill-red-500" /> using{' '}
-            <span className="text-cyan-400">React</span>,{' '}
-            <span className="text-cyan-400">TypeScript</span> &{' '}
-            <span className="text-cyan-400">Tailwind CSS</span>
+            © 2024 Linet Mukai Mutuku. All rights reserved.
           </p>
 
           <motion.button

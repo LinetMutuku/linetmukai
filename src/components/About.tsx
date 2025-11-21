@@ -116,7 +116,7 @@ const About = () => {
                   description: 'Optimizing applications for speed, accessibility, and exceptional user experience',
                   gradient: 'from-purple-500 to-cyan-500',
                 },
-              ].map((highlight, index) => (
+              ].map((highlight) => (
                 <motion.div
                   key={highlight.title}
                   variants={itemVariants}

@@ -1,7 +1,8 @@
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ExternalLink, Github, Star, Sparkles } from 'lucide-react';
+import { ExternalLink, Github, GitlabIcon as Gitlab, Star } from 'lucide-react';
 import { projects } from '../data/projects';
+import { useState, useEffect } from 'react';
 
 const Projects = () => {
   const [ref, inView] = useInView({
@@ -9,8 +10,28 @@ const Projects = () => {
     threshold: 0.1,
   });
 
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
   const featuredProject = projects.find(p => p.featured);
   const otherProjects = projects.filter(p => !p.featured);
+
+  // Helper function to determine if URL is GitLab or GitHub
+  const getRepoIcon = (url: string) => {
+    return url.includes('gitlab.com') ? Gitlab : Github;
+  };
+
+  // Image rotation effect for featured project with multiple images
+  useEffect(() => {
+    if (featuredProject?.images && featuredProject.images.length > 1) {
+      const interval = setInterval(() => {
+        setCurrentImageIndex((prevIndex) =>
+          prevIndex === featuredProject.images!.length - 1 ? 0 : prevIndex + 1
+        );
+      }, 4000); // Change image every 4 seconds
+
+      return () => clearInterval(interval);
+    }
+  }, [featuredProject]);
 
   return (
     <section id="projects" className="py-20 bg-slate-900" ref={ref}>
@@ -40,31 +61,109 @@ const Projects = () => {
             className="mb-20"
           >
             <div className="group relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity animate-pulse" />
-              <div className="relative bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden">
-                <div className="absolute top-6 right-6 z-10">
-                  <motion.div
-                    className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full"
-                    animate={{ scale: [1, 1.05, 1] }}
-                    transition={{ duration: 2, repeat: Infinity }}
-                  >
-                    <Sparkles className="w-4 h-4 text-white" />
-                    <span className="text-sm font-bold text-white">FEATURED PROJECT</span>
-                  </motion.div>
-                </div>
+              {/* Enhanced animated glow border */}
+              <motion.div
+                className="absolute -inset-1 rounded-2xl blur-xl opacity-50 group-hover:opacity-100"
+                animate={{
+                  background: [
+                    'linear-gradient(60deg, rgba(6, 182, 212, 0.8), rgba(59, 130, 246, 0.8), rgba(168, 85, 247, 0.8))',
+                    'linear-gradient(180deg, rgba(59, 130, 246, 0.8), rgba(168, 85, 247, 0.8), rgba(6, 182, 212, 0.8))',
+                    'linear-gradient(300deg, rgba(168, 85, 247, 0.8), rgba(6, 182, 212, 0.8), rgba(59, 130, 246, 0.8))',
+                    'linear-gradient(60deg, rgba(6, 182, 212, 0.8), rgba(59, 130, 246, 0.8), rgba(168, 85, 247, 0.8))',
+                  ],
+                }}
+                transition={{ duration: 5, repeat: Infinity, ease: 'linear' }}
+              />
 
-                <div className="grid lg:grid-cols-2 gap-8">
-                  <div className="relative overflow-hidden group/img">
-                    <motion.img
-                      src={featuredProject.image}
-                      alt={featuredProject.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-110"
-                      whileHover={{ scale: 1.05 }}
+              {/* Orbiting particles */}
+              <div className="absolute inset-0 overflow-hidden rounded-2xl pointer-events-none">
+                {[...Array(12)].map((_, i) => {
+                  const angle = (i * 360) / 12;
+                  return (
+                    <motion.div
+                      key={`orbit-${i}`}
+                      className="absolute w-2 h-2 bg-cyan-400 rounded-full opacity-60"
+                      style={{
+                        left: '50%',
+                        top: '50%',
+                      }}
+                      animate={{
+                        x: [
+                          Math.cos((angle * Math.PI) / 180) * 200,
+                          Math.cos(((angle + 360) * Math.PI) / 180) * 200,
+                        ],
+                        y: [
+                          Math.sin((angle * Math.PI) / 180) * 100,
+                          Math.sin(((angle + 360) * Math.PI) / 180) * 100,
+                        ],
+                        opacity: [0.6, 0.2, 0.6],
+                        scale: [1, 1.5, 1],
+                      }}
+                      transition={{
+                        duration: 8,
+                        repeat: Infinity,
+                        delay: i * 0.15,
+                        ease: 'linear',
+                      }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent" />
+                  );
+                })}
+              </div>
+
+              <div className="relative bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden">
+                <div className="grid lg:grid-cols-5 gap-8">
+                  <div className="relative overflow-hidden group/img h-[500px] lg:h-[700px] lg:col-span-3 rounded-lg bg-slate-950">
+                    {/* Animated background gradient */}
+                    <motion.div
+                      className="absolute inset-0"
+                      animate={{
+                        background: [
+                          'radial-gradient(circle at 0% 0%, rgba(6, 182, 212, 0.15) 0%, transparent 50%)',
+                          'radial-gradient(circle at 100% 100%, rgba(59, 130, 246, 0.15) 0%, transparent 50%)',
+                          'radial-gradient(circle at 0% 0%, rgba(6, 182, 212, 0.15) 0%, transparent 50%)',
+                        ],
+                      }}
+                      transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
+                    />
+
+                    <AnimatePresence mode="wait">
+                      <motion.img
+                        key={featuredProject.images ? currentImageIndex : featuredProject.image}
+                        src={featuredProject.images ? featuredProject.images[currentImageIndex] : featuredProject.image}
+                        alt={featuredProject.title}
+                        className="w-full h-full object-contain"
+                        style={{ objectPosition: 'center' }}
+                        initial={{ opacity: 0, x: 100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: -100 }}
+                        transition={{ duration: 0.5 }}
+                        whileHover={{ scale: 1.02 }}
+                      />
+                    </AnimatePresence>
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent pointer-events-none" />
+
+                    {/* Image indicators */}
+                    {featuredProject.images && featuredProject.images.length > 1 && (
+                      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-3 z-10">
+                        {featuredProject.images.map((_, index) => (
+                          <motion.button
+                            key={index}
+                            onClick={() => setCurrentImageIndex(index)}
+                            className={`h-2 rounded-full transition-all ${
+                              index === currentImageIndex
+                                ? 'bg-cyan-400 w-10 shadow-lg shadow-cyan-400/50'
+                                : 'bg-slate-400/50 hover:bg-slate-400 w-2'
+                            }`}
+                            whileHover={{ scale: 1.2 }}
+                            whileTap={{ scale: 0.9 }}
+                            aria-label={`View image ${index + 1}`}
+                          />
+                        ))}
+                      </div>
+                    )}
                   </div>
 
-                  <div className="p-8 lg:p-12 flex flex-col justify-center">
+                  <div className="p-8 lg:p-12 flex flex-col justify-center lg:col-span-2">
                     <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
                       {featuredProject.title}
                     </h3>
@@ -123,7 +222,10 @@ const Projects = () => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                       >
-                        <Github className="w-4 h-4" />
+                        {(() => {
+                          const RepoIcon = getRepoIcon(featuredProject.githubUrl);
+                          return <RepoIcon className="w-4 h-4" />;
+                        })()}
                         <span>View Code</span>
                       </motion.a>
                     </div>
@@ -144,16 +246,67 @@ const Projects = () => {
               className="group relative"
               whileHover={{ y: -8 }}
             >
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl blur opacity-25 group-hover:opacity-50 transition-opacity" />
+              {/* Animated glow border */}
+              <motion.div
+                className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 rounded-xl blur opacity-25 group-hover:opacity-75"
+                animate={{
+                  background: [
+                    'linear-gradient(45deg, rgba(6, 182, 212, 0.5), rgba(59, 130, 246, 0.5))',
+                    'linear-gradient(225deg, rgba(59, 130, 246, 0.5), rgba(168, 85, 247, 0.5))',
+                    'linear-gradient(45deg, rgba(6, 182, 212, 0.5), rgba(59, 130, 246, 0.5))',
+                  ],
+                }}
+                transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
+              />
+
+              {/* Floating particles in background */}
+              <div className="absolute inset-0 overflow-hidden rounded-xl pointer-events-none">
+                {[...Array(8)].map((_, i) => (
+                  <motion.div
+                    key={`particle-${project.id}-${i}`}
+                    className="absolute w-1 h-1 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-70"
+                    style={{
+                      left: `${Math.random() * 100}%`,
+                      top: `${Math.random() * 100}%`,
+                    }}
+                    animate={{
+                      y: [-20, -50, -20],
+                      x: [0, Math.random() * 20 - 10, 0],
+                      opacity: [0, 0.7, 0],
+                      scale: [0, 1.5, 0],
+                    }}
+                    transition={{
+                      duration: 2 + Math.random() * 2,
+                      repeat: Infinity,
+                      delay: i * 0.2,
+                      ease: 'easeInOut',
+                    }}
+                  />
+                ))}
+              </div>
+
               <div className="relative bg-slate-950 rounded-xl border border-slate-800 overflow-hidden h-full flex flex-col">
-                <div className="relative overflow-hidden h-48 group/img">
+                {/* Animated gradient overlay */}
+                <motion.div
+                  className="absolute inset-0 opacity-0 group-hover:opacity-10 pointer-events-none"
+                  animate={{
+                    background: [
+                      'radial-gradient(circle at 0% 0%, rgba(6, 182, 212, 0.4) 0%, transparent 50%)',
+                      'radial-gradient(circle at 100% 100%, rgba(59, 130, 246, 0.4) 0%, transparent 50%)',
+                      'radial-gradient(circle at 0% 100%, rgba(168, 85, 247, 0.4) 0%, transparent 50%)',
+                      'radial-gradient(circle at 0% 0%, rgba(6, 182, 212, 0.4) 0%, transparent 50%)',
+                    ],
+                  }}
+                  transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
+                />
+                <div className="relative overflow-hidden h-72 group/img">
                   <motion.img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500"
-                    whileHover={{ scale: 1.1 }}
+                    whileHover={{ scale: 1.08 }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent opacity-60" />
                   {project.liveUrl && (
                     <motion.div
                       className="absolute top-4 right-4 px-3 py-1 bg-emerald-500/90 backdrop-blur-sm rounded-full"
@@ -222,7 +375,10 @@ const Projects = () => {
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                     >
-                      <Github className="w-4 h-4" />
+                      {(() => {
+                        const RepoIcon = getRepoIcon(project.githubUrl);
+                        return <RepoIcon className="w-4 h-4" />;
+                      })()}
                       <span>Code</span>
                     </motion.a>
                   </div>

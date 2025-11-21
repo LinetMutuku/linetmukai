@@ -4,6 +4,7 @@ export interface Project {
   description: string;
   longDescription: string;
   image: string;
+  images?: string[]; // For projects with multiple rotating images
   tags: string[];
   liveUrl?: string;
   githubUrl: string;
