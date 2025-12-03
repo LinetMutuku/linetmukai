@@ -8,7 +8,7 @@ export const skills: Skill[] = [
   { name: 'Zustand', icon: '🐻', level: 'Advanced', category: 'frontend' },
   { name: 'Vue.js', icon: '💚', level: 'Expert', category: 'frontend' },
   { name: 'Pinia', icon: '🍍', level: 'Advanced', category: 'frontend' },
-    { name: 'Leaflet', icon: '🗺️', level: 'Advanced', category: 'frontend' },
+    { name: 'Leaflet',  icon: '🗺️',  level: 'Advanced',  category: 'frontend' },
   { name: 'Next.js', icon: '▲', level: 'Expert', category: 'frontend' },
   { name: 'HTML5', icon: '🌐', level: 'Expert', category: 'frontend' },
   { name: 'CSS3', icon: '🎨', level: 'Expert', category: 'frontend' },
