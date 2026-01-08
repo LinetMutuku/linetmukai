@@ -31,7 +31,7 @@ export const projects: Project[] = [
     description: 'Comprehensive church operations management platform streamlining parish administration through intuitive digital tools. Modern web application handling member management, events, finances, and communication.',
     longDescription: 'Modern web application designed to streamline parish administration with member database management, event coordination, financial tracking, and integrated communication tools.',
     image: '/assets/parishflow.png',
-    tags: ['Vue.js', 'JavaScript', 'CSS3', 'RESTful API', 'Responsive Design'],
+    tags: ['Vue.js', 'JavaScript','Pinia', 'CSS3', 'RESTful API', 'Responsive Design'],
     githubUrl: 'https://gitlab.com/bck-inno-works/parish-flow/parish-flow-vue-frontend',
     highlights: [
       '👥 Member database with detailed profile management',
@@ -48,7 +48,7 @@ export const projects: Project[] = [
     description: 'Advanced content management system purpose-built for religious organizations. Provides powerful tools for dynamic content creation, multimedia management, and member engagement.',
     longDescription: 'Advanced CMS platform featuring dynamic content management, sermon library, event calendar, member portal, and comprehensive user role management with TypeScript implementation.',
     image: '/assets/iparish.png',
-    tags: ['Vue.js', 'Javascript', 'CSS3', 'CMS', 'JWT', 'RESTful API'],
+    tags: ['Vue.js', 'Javascript','CSS3', 'CMS', 'JWT', 'RESTful API'],
     liveUrl: 'https://iparish.bck.co.ke/',
     githubUrl: 'https://gitlab.com/bck-inno-works/iparish-cms/iparish-cms-vue-frontend',
     highlights: [
