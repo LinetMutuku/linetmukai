@@ -48,7 +48,7 @@ export const projects: Project[] = [
     description: 'Advanced content management system purpose-built for religious organizations. Provides powerful tools for dynamic content creation, multimedia management, and member engagement.',
     longDescription: 'Advanced CMS platform featuring dynamic content management, sermon library, event calendar, member portal, and comprehensive user role management with TypeScript implementation.',
     image: '/assets/iparish.png',
-    tags: ['Vue.js', 'TypeScript', 'CSS3', 'CMS', 'JWT', 'RESTful API'],
+    tags: ['Vue.js', 'Javascript', 'CSS3', 'CMS', 'JWT', 'RESTful API'],
     liveUrl: 'https://iparish.bck.co.ke/',
     githubUrl: 'https://gitlab.com/bck-inno-works/iparish-cms/iparish-cms-vue-frontend',
     highlights: [
