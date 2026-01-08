@@ -15,6 +15,7 @@ export const skills: Skill[] = [
   { name: 'Tailwind CSS', icon: '💨', level: 'Expert', category: 'frontend' },
   { name: 'PWA Development', icon: '📱', level: 'Expert', category: 'frontend' },
   { name: 'Responsive Design', icon: '📐', level: 'Expert', category: 'frontend' },
+  { name: 'Firebase', icon: '🔥', level: 'Advanced', category: 'backend' },
   { name: 'FastAPI', icon: '⚡', level: 'Advanced', category: 'backend' },
   { name: 'Django', icon: '🎸', level: 'Advanced', category: 'backend' },
   { name: 'Node.js', icon: '🟢', level: 'Advanced', category: 'backend' },
