@@ -402,8 +402,8 @@ const Hero = () => {
         >
           Specializing in building{' '}
           <span className="text-cyan-400">scalable</span>,{' '}
-          <span className="text-blue-400">performant</span> web applications and Progressive
-          Web Apps with modern JavaScript frameworks
+          <span className="text-blue-400">performant</span> modern applications,
+          SaaS platforms, and Progressive Web Apps
         </motion.p>
 
         {/* CTA Buttons with magnetic effect */}

@@ -51,8 +51,9 @@ const About = () => {
                 <div className="relative bg-slate-800 p-8 rounded-lg border border-slate-700">
                   <p className="text-lg text-slate-300 leading-relaxed">
                     A <span className="text-cyan-400 font-semibold">passionate frontend developer</span> crafting
-                    exceptional digital experiences with modern JavaScript frameworks. I specialize in building
-                    <span className="text-cyan-400 font-semibold"> scalable, performant web applications</span> and
+                    exceptional digital experiences with modern technologies. I specialize in building
+                    <span className="text-cyan-400 font-semibold"> scalable, performant web applications</span>,
+                    <span className="text-cyan-400 font-semibold"> SaaS applications</span>, and
                     <span className="text-cyan-400 font-semibold"> Progressive Web Apps</span> that deliver
                     outstanding user experiences.
                   </p>

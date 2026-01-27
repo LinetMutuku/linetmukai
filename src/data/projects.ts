@@ -80,20 +80,20 @@ export const projects: Project[] = [
   },
   {
     id: 5,
-    title: 'JennyWealthyHoneyBees Platform',
-    description: 'Specialized web application for sustainable beekeeping management and honey production operations. Features comprehensive tracking systems, analytics, and customer management tools.',
-    longDescription: 'Modern apiculture management platform built with React and Next.js, featuring hive monitoring, production analytics, inventory tracking, and CRM capabilities with TypeScript implementation.',
+    title: 'JennyWealth Honeybee Events',
+    description: 'Premium event planning and management platform for a professional events company in Nigeria. Digital hub enabling clients to explore services and book event management for corporate functions, weddings, and private parties.',
+    longDescription: 'Digital platform for JennyWealth Honeybee Events Management, a premium event planning company in Nigeria. Features an engaging brand introduction, detailed service descriptions, photo gallery of completed events, client testimonials, and direct contact pathways for booking professional event management services.',
     image: '/assets/jennyhoneybees.png',
-    tags: ['React', 'Next.js', 'TypeScript', 'PostgreSQL', 'Chart.js'],
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Server-Side Rendering'],
     liveUrl: 'https://www.jennywealthhoneybee.com/',
     githubUrl: 'https://github.com/LinetMutuku/jennywealth',
     highlights: [
-      '🏺 Hive monitoring and management system',
-      '📈 Production analytics and reporting dashboard',
-      '📦 Inventory tracking for honey and equipment',
-      '👥 Customer relationship management',
-      '🌱 Sustainability metrics tracking',
-      '💰 Sales and revenue tracking'
+      '🎉 Premium event planning for corporate functions and weddings',
+      '📸 Photo gallery showcasing completed events',
+      '⭐ Client testimonials and reviews section',
+      '📋 Comprehensive service descriptions and packages',
+      '📞 Contact form for inquiries and bookings',
+      '🎨 Visually appealing brand presentation'
     ]
   }
 ];
