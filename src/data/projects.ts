@@ -65,9 +65,9 @@ export const projects: Project[] = [
     title: 'Jasco Website',
     description: 'Modern corporate website showcasing professional web development with clean design, smooth interactions, and optimized performance. Features contemporary UI/UX patterns and responsive layouts.',
     longDescription: 'Professional corporate website featuring modern design principles, optimized performance, SEO best practices, and smooth user experience across all devices.',
-    image: '/assets/Jacowebsite.png',
+    image: '/assets/jascowebsite.png',
     tags: ['Vue.js', 'JavaScript', 'CSS3', 'Responsive Design', 'SEO'],
-    liveUrl: 'https://sample.jasco.co.ke/',
+    liveUrl: 'https://jasco.co.ke/',
     githubUrl: 'https://gitlab.com/bck-inno-works/jasco-website/jasco-website-vue-frontend',
     highlights: [
       '🎨 Modern, professional design with brand consistency',
