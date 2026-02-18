@@ -3,6 +3,27 @@ import { Project } from '../types';
 export const projects: Project[] = [
   {
     id: 1,
+    title: 'AMFI-K Data Hub',
+    description: 'Modern web platform for the Association of Microfinance Institutions of Kenya (AMFI-K) to streamline data collection, reporting, and member management across Kenya\'s microfinance sector.',
+    longDescription: 'Centralized platform digitizing AMFI-K\'s entire data collection and member management workflow. Features structured data collection periods with custom surveys, organization registration and approval workflows, subscription lifecycle management, payment tracking and verification, and comprehensive audit logging. Supports both member organizations submitting data and AMFI-K staff managing the platform.',
+    image: '/assets/amfi.png',
+    tags: ['Vue 3', 'Vuetify 3', 'Pinia', 'Vite'],
+    liveUrl: 'https://amfi.bck.co.ke/',
+    githubUrl: '',
+    featured: true,
+    highlights: [
+      '📊 Structured data collection periods with deadlines and progress tracking',
+      '📝 Custom survey builder with multiple question types and drag-and-drop ordering',
+      '🏢 Organization registration and approval workflow with role-based access',
+      '💳 Payment tracking, receipt generation, and subscription management',
+      '🔐 OTP-based authentication with JWT tokens and role-based routing',
+      '📋 Comprehensive audit logs and compliance tracking',
+      '🎫 In-app support ticket management system',
+      '📅 Event calendar for industry events and deadlines'
+    ]
+  },
+  {
+    id: 2,
     title: 'AfrikaHawa Coffee Traceability PWA',
     description: 'Revolutionary Progressive Web Application transforming Africa\'s coffee supply chain through complete transparency and traceability. Enterprise-grade PWA with offline-first architecture and ML-powered insights.',
     longDescription: 'Enterprise-grade Progressive Web Application revolutionizing Africa\'s coffee supply chain. Features sophisticated offline-first architecture, real-time analytics, role-based access control, and ML-powered quality predictions. Enables complete traceability from seedling to cup with background sync and push notifications.',
@@ -26,7 +47,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     title: 'Parish Flow Management System',
     description: 'Comprehensive church operations management platform streamlining parish administration through intuitive digital tools. Modern web application handling member management, events, finances, and communication.',
     longDescription: 'Modern web application designed to streamline parish administration with member database management, event coordination, financial tracking, and integrated communication tools.',
@@ -43,7 +64,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     title: 'iParish CMS Platform',
     description: 'Advanced content management system purpose-built for religious organizations. Provides powerful tools for dynamic content creation, multimedia management, and member engagement.',
     longDescription: 'Advanced CMS platform featuring dynamic content management, sermon library, event calendar, member portal, and comprehensive user role management with TypeScript implementation.',
@@ -61,7 +82,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     title: 'Jasco Website',
     description: 'Modern corporate website showcasing professional web development with clean design, smooth interactions, and optimized performance. Features contemporary UI/UX patterns and responsive layouts.',
     longDescription: 'Professional corporate website featuring modern design principles, optimized performance, SEO best practices, and smooth user experience across all devices.',
@@ -79,7 +100,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     title: 'JennyWealth Honeybee Events',
     description: 'Premium event planning and management platform for a professional events company in Nigeria. Digital hub enabling clients to explore services and book event management for corporate functions, weddings, and private parties.',
     longDescription: 'Digital platform for JennyWealth Honeybee Events Management, a premium event planning company in Nigeria. Features an engaging brand introduction, detailed service descriptions, photo gallery of completed events, client testimonials, and direct contact pathways for booking professional event management services.',
