@@ -12,8 +12,9 @@ const Projects = () => {
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const featuredProject = projects.find(p => p.featured);
-  const otherProjects = projects.filter(p => !p.featured);
+  const featuredProjects = projects.filter(p => p.featured);
+  const featuredProject = featuredProjects[0];
+  const otherProjects = projects.filter(p => p !== featuredProject);
 
   // Helper function to determine if URL is GitLab or GitHub
   const getRepoIcon = (url: string) => {
