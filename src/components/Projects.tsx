@@ -143,6 +143,16 @@ const Projects = () => {
                     </AnimatePresence>
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent pointer-events-none" />
 
+                    {featuredProject.liveUrl && (
+                      <motion.div
+                        className="absolute top-4 right-4 px-3 py-1 bg-emerald-500/90 backdrop-blur-sm rounded-full z-10"
+                        animate={{ scale: [1, 1.1, 1] }}
+                        transition={{ duration: 2, repeat: Infinity }}
+                      >
+                        <span className="text-xs font-bold text-white">LIVE</span>
+                      </motion.div>
+                    )}
+
                     {/* Image indicators */}
                     {featuredProject.images && featuredProject.images.length > 1 && (
                       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-3 z-10">
