@@ -9,7 +9,7 @@ export const projects: Project[] = [
     image: '/assets/amfi.png',
     tags: ['Vue 3', 'Vuetify 3', 'Pinia', 'Vite'],
     liveUrl: 'https://amfi.bck.co.ke/',
-    githubUrl: '',
+    githubUrl: 'https://gitlab.com/linetmukai9',
     featured: true,
     highlights: [
       '📊 Structured data collection periods with deadlines and progress tracking',
@@ -31,7 +31,7 @@ export const projects: Project[] = [
     images: ['/assets/afrikahawa1.png', '/assets/afrikahawa2.png'],
     tags: ['Vue 3', 'Vite', 'PWA', 'IndexedDB', 'Service Workers', 'Pinia', 'Chart.js', 'Bootstrap 5', 'Machine Learning'],
     liveUrl: 'https://afrikahawa-pwa.bck.co.ke/',
-    githubUrl: 'https://gitlab.com/bck-inno-works/afrikahawa/afrikahawa-mobile-pwa/-/tree/linet-dev?ref_type=heads',
+    githubUrl: 'https://gitlab.com/linetmukai9',
     featured: true,
     highlights: [
       '🌾 Complete coffee traceability from harvest to batch processing',
@@ -48,30 +48,13 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: 'Parish Flow Management System',
-    description: 'Comprehensive church operations management platform streamlining parish administration through intuitive digital tools. Modern web application handling member management, events, finances, and communication.',
-    longDescription: 'Modern web application designed to streamline parish administration with member database management, event coordination, financial tracking, and integrated communication tools.',
-    image: '/assets/parishflow.png',
-    tags: ['Vue.js', 'JavaScript','Pinia', 'CSS3', 'RESTful API', 'Responsive Design'],
-    githubUrl: 'https://gitlab.com/bck-inno-works/parish-flow/parish-flow-vue-frontend',
-    highlights: [
-      '👥 Member database with detailed profile management',
-      '📅 Event coordination and calendar system with RSVP',
-      '💰 Financial tracking, donation management, and reporting',
-      '📧 Integrated communication tools for announcements',
-      '📊 Administrative dashboard with insights and metrics',
-      '🔐 Secure user authentication and authorization'
-    ]
-  },
-  {
-    id: 4,
     title: 'iParish CMS Platform',
     description: 'Advanced content management system purpose-built for religious organizations. Provides powerful tools for dynamic content creation, multimedia management, and member engagement.',
     longDescription: 'Advanced CMS platform featuring dynamic content management, sermon library, event calendar, member portal, and comprehensive user role management with TypeScript implementation.',
     image: '/assets/iparish.png',
     tags: ['Vue.js', 'Javascript','CSS3', 'CMS', 'JWT', 'RESTful API'],
     liveUrl: 'https://iparish.bck.co.ke/',
-    githubUrl: 'https://gitlab.com/bck-inno-works/iparish-cms/iparish-cms-vue-frontend',
+    githubUrl: 'https://gitlab.com/linetmukai9',
     highlights: [
       '📝 Dynamic content management with WYSIWYG editor',
       '🎤 Sermon library and media management',
@@ -82,14 +65,14 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 5,
+    id: 4,
     title: 'Jasco Website',
     description: 'Modern corporate website showcasing professional web development with clean design, smooth interactions, and optimized performance. Features contemporary UI/UX patterns and responsive layouts.',
     longDescription: 'Professional corporate website featuring modern design principles, optimized performance, SEO best practices, and smooth user experience across all devices.',
     image: '/assets/jascowebsite.png',
     tags: ['Vue.js', 'JavaScript', 'CSS3', 'Responsive Design', 'SEO'],
     liveUrl: 'https://jascocommunications.com/',
-    githubUrl: 'https://gitlab.com/bck-inno-works/jasco-website/jasco-website-vue-frontend',
+    githubUrl: 'https://gitlab.com/linetmukai9',
     highlights: [
       '🎨 Modern, professional design with brand consistency',
       '📱 Fully responsive across all devices',
@@ -100,7 +83,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 6,
+    id: 5,
     title: 'JennyWealth Honeybee Events',
     description: 'Premium event planning and management platform for a professional events company in Nigeria. Digital hub enabling clients to explore services and book event management for corporate functions, weddings, and private parties.',
     longDescription: 'Digital platform for JennyWealth Honeybee Events Management, a premium event planning company in Nigeria. Features an engaging brand introduction, detailed service descriptions, photo gallery of completed events, client testimonials, and direct contact pathways for booking professional event management services.',
@@ -115,6 +98,23 @@ export const projects: Project[] = [
       '📋 Comprehensive service descriptions and packages',
       '📞 Contact form for inquiries and bookings',
       '🎨 Visually appealing brand presentation'
+    ]
+  },
+  {
+    id: 6,
+    title: 'Parish Flow Management System',
+    description: 'Comprehensive church operations management platform streamlining parish administration through intuitive digital tools. Modern web application handling member management, events, finances, and communication.',
+    longDescription: 'Modern web application designed to streamline parish administration with member database management, event coordination, financial tracking, and integrated communication tools.',
+    image: '/assets/parishflow.png',
+    tags: ['Vue.js', 'JavaScript','Pinia', 'CSS3', 'RESTful API', 'Responsive Design'],
+    githubUrl: 'https://gitlab.com/linetmukai9',
+    highlights: [
+      '👥 Member database with detailed profile management',
+      '📅 Event coordination and calendar system with RSVP',
+      '💰 Financial tracking, donation management, and reporting',
+      '📧 Integrated communication tools for announcements',
+      '📊 Administrative dashboard with insights and metrics',
+      '🔐 Secure user authentication and authorization'
     ]
   }
 ];

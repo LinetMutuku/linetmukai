@@ -227,7 +227,7 @@ const Projects = () => {
                           const RepoIcon = getRepoIcon(featuredProject.githubUrl);
                           return <RepoIcon className="w-4 h-4" />;
                         })()}
-                        <span>View Code</span>
+                        <span>{featuredProject.githubUrl.includes('github.com/LinetMutuku/') ? 'View Code' : 'GitLab Profile'}</span>
                       </motion.a>
                     </div>
                   </div>
@@ -380,7 +380,7 @@ const Projects = () => {
                         const RepoIcon = getRepoIcon(project.githubUrl);
                         return <RepoIcon className="w-4 h-4" />;
                       })()}
-                      <span>Code</span>
+                      <span>{project.githubUrl.includes('github.com/LinetMutuku/') ? 'Code' : 'GitLab Profile'}</span>
                     </motion.a>
                   </div>
                 </div>
