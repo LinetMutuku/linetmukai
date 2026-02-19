@@ -29,7 +29,7 @@ export const projects: Project[] = [
     longDescription: 'Enterprise-grade Progressive Web Application revolutionizing Africa\'s coffee supply chain. Features sophisticated offline-first architecture, real-time analytics, role-based access control, and ML-powered quality predictions. Enables complete traceability from seedling to cup with background sync and push notifications.',
     image: '/assets/afrikahawa1.png',
     images: ['/assets/afrikahawa1.png', '/assets/afrikahawa2.png'],
-    tags: ['Vue 3', 'Vite', 'PWA', 'IndexedDB', 'Service Workers', 'Pinia', 'Chart.js', 'Bootstrap 5', 'Machine Learning'],
+    tags: ['Vue 3', 'Vite', 'PWA', 'pinia', 'IndexedDB', 'Service Workers', 'Chart.js', 'Bootstrap 5', 'Machine Learning'],
     liveUrl: 'https://afrikahawa-pwa.bck.co.ke/',
     githubUrl: 'https://gitlab.com/linetmukai9',
     featured: true,
