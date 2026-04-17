@@ -92,7 +92,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-200 dark:border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 dark:text-slate-400 text-sm text-center md:text-left">
-            © 2024 Linet Mukai Mutuku. All rights reserved.
+            © 2026 Linet Mukai Mutuku. All rights reserved.
           </p>
 
           <motion.button
