@@ -16,6 +16,7 @@ export const skills: Skill[] = [
   { name: 'PWA Development', icon: '📱', level: 'Expert', category: 'frontend' },
   { name: 'Chakra UI', icon: '⚡', level: 'Advanced', category: 'frontend' },
   { name: 'Material UI', icon: '🎨', level: 'Advanced', category: 'frontend' },
+  { name: 'Vite', icon: '⚡', level: 'Expert', category: 'frontend' },
   { name: 'Responsive Design', icon: '📐', level: 'Expert', category: 'frontend' },
   { name: 'Python', icon: '🐍', level: 'Advanced', category: 'backend' },
   { name: 'Firebase', icon: '🔥', level: 'Advanced', category: 'backend' },
