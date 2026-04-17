@@ -41,7 +41,7 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="py-20 bg-slate-950" ref={ref}>
+    <section id="skills" className="py-20 bg-gray-50 dark:bg-slate-950" ref={ref}>
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -55,7 +55,7 @@ const Skills = () => {
             </span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto rounded-full mb-6" />
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-500 dark:text-slate-400 max-w-2xl mx-auto">
             Modern technologies and frameworks for building exceptional web applications
           </p>
         </motion.div>
@@ -69,10 +69,10 @@ const Skills = () => {
               transition={{ duration: 0.6, delay: catIndex * 0.2 }}
             >
               <div className="mb-6">
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2">
                   {cat.name}
                 </h3>
-                <p className="text-slate-400">{cat.description}</p>
+                <p className="text-gray-500 dark:text-slate-400">{cat.description}</p>
               </div>
 
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
@@ -88,7 +88,7 @@ const Skills = () => {
                       whileHover={{ scale: 1.05, y: -5 }}
                     >
                       <div className={`absolute -inset-0.5 bg-gradient-to-r ${cat.gradient} rounded-lg blur opacity-25 group-hover:opacity-75 transition-opacity`} />
-                      <div className="relative h-full bg-slate-900 p-6 rounded-lg border border-slate-800 group-hover:border-transparent transition-all">
+                      <div className="relative h-full bg-white dark:bg-slate-900 p-6 rounded-lg border border-gray-200 dark:border-slate-800 group-hover:border-transparent transition-all">
                         <div className="text-center">
                           <motion.div
                             className="text-4xl mb-3"
@@ -101,7 +101,7 @@ const Skills = () => {
                           >
                             {skill.icon}
                           </motion.div>
-                          <h4 className="font-semibold text-white mb-2 text-sm">
+                          <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm">
                             {skill.name}
                           </h4>
                           <div className="relative">
@@ -126,8 +126,8 @@ const Skills = () => {
         >
           <div className="inline-block relative">
             <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 rounded-lg blur opacity-25" />
-            <div className="relative bg-slate-900 px-8 py-6 rounded-lg border border-slate-800">
-              <p className="text-slate-300 text-lg">
+            <div className="relative bg-white dark:bg-slate-900 px-8 py-6 rounded-lg border border-gray-200 dark:border-slate-800">
+              <p className="text-gray-600 dark:text-slate-300 text-lg">
                 <span className="text-cyan-400 font-semibold">Always learning</span> and staying
                 up-to-date with the latest web technologies and best practices
               </p>

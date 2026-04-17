@@ -169,7 +169,7 @@ const Hero = () => {
           }}
           transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900" />
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-blue-50 to-white dark:from-slate-950 dark:via-blue-950 dark:to-slate-900" />
       </div>
 
       {/* Floating orbs */}
@@ -264,7 +264,7 @@ const Hero = () => {
       {floatingSkills.map((skill, i) => (
         <motion.div
           key={skill.name}
-          className="absolute hidden lg:flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-md border border-cyan-500/30 rounded-full"
+          className="absolute hidden lg:flex items-center gap-2 px-4 py-2 bg-white/50 dark:bg-slate-800/50 backdrop-blur-md border border-cyan-500/30 rounded-full"
           style={{
             left: `${10 + i * 30}%`,
             top: `${20 + i * 15}%`,
@@ -387,7 +387,7 @@ const Hero = () => {
             />
           </div>
           <motion.p
-            className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto mt-6"
+            className="text-xl md:text-2xl text-gray-600 dark:text-slate-300 max-w-3xl mx-auto mt-6"
             variants={itemVariants}
           >
             Crafting exceptional digital experiences with{' '}
@@ -397,7 +397,7 @@ const Hero = () => {
 
         {/* Description */}
         <motion.p
-          className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed"
+          className="text-lg md:text-xl text-gray-500 dark:text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed"
           variants={itemVariants}
         >
           Specializing in building{' '}

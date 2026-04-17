@@ -49,7 +49,7 @@ const Navbar = () => {
         animate={{ y: 0 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? 'bg-slate-900/80 dark:bg-slate-900/90 backdrop-blur-lg border-b border-slate-800/50'
+            ? 'bg-white/80 dark:bg-slate-900/90 backdrop-blur-lg border-b border-gray-200/50 dark:border-slate-800/50'
             : 'bg-transparent'
         }`}
       >
@@ -72,7 +72,7 @@ const Navbar = () => {
                   className={`relative text-sm font-medium transition-colors ${
                     activeSection === item.id
                       ? 'text-cyan-400'
-                      : 'text-slate-300 hover:text-cyan-400'
+                      : 'text-gray-600 dark:text-slate-300 hover:text-cyan-400'
                   }`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -90,7 +90,7 @@ const Navbar = () => {
 
               <motion.button
                 onClick={toggleTheme}
-                className="p-2 rounded-lg bg-slate-800/50 border border-slate-700 hover:border-cyan-500 transition-all"
+                className="p-2 rounded-lg bg-gray-100 dark:bg-slate-800/50 border border-gray-200 dark:border-slate-700 hover:border-cyan-500 transition-all"
                 whileHover={{ scale: 1.1, rotate: 180 }}
                 whileTap={{ scale: 0.9 }}
                 aria-label="Toggle theme"
@@ -98,7 +98,7 @@ const Navbar = () => {
                 {theme === 'dark' ? (
                   <Sun className="w-5 h-5 text-cyan-400" />
                 ) : (
-                  <Moon className="w-5 h-5 text-slate-400" />
+                  <Moon className="w-5 h-5 text-gray-500" />
                 )}
               </motion.button>
             </div>
@@ -106,27 +106,27 @@ const Navbar = () => {
             <div className="flex md:hidden items-center gap-4">
               <motion.button
                 onClick={toggleTheme}
-                className="p-2 rounded-lg bg-slate-800/50 border border-slate-700"
+                className="p-2 rounded-lg bg-gray-100 dark:bg-slate-800/50 border border-gray-200 dark:border-slate-700"
                 whileTap={{ scale: 0.9 }}
                 aria-label="Toggle theme"
               >
                 {theme === 'dark' ? (
                   <Sun className="w-5 h-5 text-cyan-400" />
                 ) : (
-                  <Moon className="w-5 h-5 text-slate-400" />
+                  <Moon className="w-5 h-5 text-gray-500" />
                 )}
               </motion.button>
 
               <motion.button
                 onClick={() => setIsOpen(!isOpen)}
-                className="p-2 rounded-lg bg-slate-800/50 border border-slate-700"
+                className="p-2 rounded-lg bg-gray-100 dark:bg-slate-800/50 border border-gray-200 dark:border-slate-700"
                 whileTap={{ scale: 0.9 }}
                 aria-label="Toggle menu"
               >
                 {isOpen ? (
                   <X className="w-6 h-6 text-cyan-400" />
                 ) : (
-                  <Menu className="w-6 h-6 text-slate-300" />
+                  <Menu className="w-6 h-6 text-gray-600 dark:text-slate-300" />
                 )}
               </motion.button>
             </div>
@@ -139,7 +139,7 @@ const Navbar = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800/50"
+              className="md:hidden bg-white/95 dark:bg-slate-900/95 backdrop-blur-lg border-t border-gray-200/50 dark:border-slate-800/50"
             >
               <div className="px-6 py-4 space-y-2">
                 {navItems.map((item, index) => (
@@ -152,7 +152,7 @@ const Navbar = () => {
                     className={`block w-full text-left px-4 py-3 rounded-lg transition-colors ${
                       activeSection === item.id
                         ? 'bg-cyan-500/10 text-cyan-400 border border-cyan-500/20'
-                        : 'text-slate-300 hover:bg-slate-800/50'
+                        : 'text-gray-600 dark:text-slate-300 hover:bg-gray-100 dark:hover:bg-slate-800/50'
                     }`}
                   >
                     {item.label}

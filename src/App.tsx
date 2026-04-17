@@ -24,7 +24,7 @@ function App() {
       </AnimatePresence>
 
       {!loading && (
-        <div className="bg-slate-950 text-white">
+        <div className="bg-gray-50 text-gray-900 dark:bg-slate-950 dark:text-white">
           <Navbar />
           <Hero />
           <About />

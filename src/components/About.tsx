@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Download, Code, Sparkles, Rocket } from 'lucide-react';
+import { Code, Sparkles, Rocket } from 'lucide-react';
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -28,7 +28,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-20 bg-slate-900" ref={ref}>
+    <section id="about" className="py-20 bg-white dark:bg-slate-900" ref={ref}>
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           variants={containerVariants}
@@ -48,8 +48,8 @@ const About = () => {
             <motion.div variants={itemVariants} className="space-y-6">
               <div className="relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg blur opacity-25" />
-                <div className="relative bg-slate-800 p-8 rounded-lg border border-slate-700">
-                  <p className="text-lg text-slate-300 leading-relaxed">
+                <div className="relative bg-gray-50 dark:bg-slate-800 p-8 rounded-lg border border-gray-200 dark:border-slate-700">
+                  <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     A <span className="text-cyan-400 font-semibold">passionate frontend developer</span> crafting
                     exceptional digital experiences with modern technologies. I specialize in building
                     <span className="text-cyan-400 font-semibold"> scalable, performant web applications</span>,
@@ -62,8 +62,8 @@ const About = () => {
 
               <div className="relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg blur opacity-25" />
-                <div className="relative bg-slate-800 p-8 rounded-lg border border-slate-700">
-                  <p className="text-lg text-slate-300 leading-relaxed">
+                <div className="relative bg-gray-50 dark:bg-slate-800 p-8 rounded-lg border border-gray-200 dark:border-slate-700">
+                  <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     With expertise in <span className="text-cyan-400 font-semibold">Vue.js, React, and Next.js</span>,
                     I transform ideas into pixel-perfect, responsive interfaces. My strong foundation in backend
                     technologies enables seamless <span className="text-cyan-400 font-semibold">full-stack collaboration</span> and
@@ -74,8 +74,8 @@ const About = () => {
 
               <div className="relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg blur opacity-25" />
-                <div className="relative bg-slate-800 p-8 rounded-lg border border-slate-700">
-                  <p className="text-lg text-slate-300 leading-relaxed">
+                <div className="relative bg-gray-50 dark:bg-slate-800 p-8 rounded-lg border border-gray-200 dark:border-slate-700">
+                  <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     I'm driven by creating innovative solutions that make a real impact. From enterprise PWAs
                     revolutionizing agricultural supply chains to sophisticated content management systems,
                     I bring <span className="text-cyan-400 font-semibold">technical excellence</span> and
@@ -84,17 +84,6 @@ const About = () => {
                 </div>
               </div>
 
-              <motion.a
-                href="/cv.pdf"
-                download
-                className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold text-white overflow-hidden relative"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <span className="relative z-10">Download Resume</span>
-                <Download className="w-5 h-5 relative z-10 group-hover:animate-bounce" />
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </motion.a>
             </motion.div>
 
             <motion.div variants={itemVariants} className="space-y-6">
@@ -125,16 +114,16 @@ const About = () => {
                   whileHover={{ scale: 1.02 }}
                 >
                   <div className={`absolute -inset-0.5 bg-gradient-to-r ${highlight.gradient} rounded-lg blur opacity-25 group-hover:opacity-50 transition-opacity`} />
-                  <div className="relative bg-slate-800 p-6 rounded-lg border border-slate-700 group-hover:border-cyan-500/50 transition-all">
+                  <div className="relative bg-gray-50 dark:bg-slate-800 p-6 rounded-lg border border-gray-200 dark:border-slate-700 group-hover:border-cyan-500/50 transition-all">
                     <div className="flex items-start gap-4">
                       <div className={`p-3 bg-gradient-to-r ${highlight.gradient} rounded-lg`}>
                         <highlight.icon className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-semibold text-white mb-2">
+                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                           {highlight.title}
                         </h3>
-                        <p className="text-slate-400">
+                        <p className="text-gray-500 dark:text-slate-400">
                           {highlight.description}
                         </p>
                       </div>

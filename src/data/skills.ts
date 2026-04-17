@@ -14,6 +14,8 @@ export const skills: Skill[] = [
   { name: 'CSS3', icon: '🎨', level: 'Expert', category: 'frontend' },
   { name: 'Tailwind CSS', icon: '💨', level: 'Expert', category: 'frontend' },
   { name: 'PWA Development', icon: '📱', level: 'Expert', category: 'frontend' },
+  { name: 'Chakra UI', icon: '⚡', level: 'Advanced', category: 'frontend' },
+  { name: 'Material UI', icon: '🎨', level: 'Advanced', category: 'frontend' },
   { name: 'Responsive Design', icon: '📐', level: 'Expert', category: 'frontend' },
   { name: 'Firebase', icon: '🔥', level: 'Advanced', category: 'backend' },
   { name: 'FastAPI', icon: '⚡', level: 'Advanced', category: 'backend' },
@@ -25,5 +27,6 @@ export const skills: Skill[] = [
   { name: 'Git', icon: '📦', level: 'Expert', category: 'tools' },
   { name: 'Docker', icon: '🐳', level: 'Advanced', category: 'tools' },
   { name: 'CI/CD', icon: '🔄', level: 'Advanced', category: 'tools' },
+  { name: 'Jira', icon: '📋', level: 'Advanced', category: 'tools' },
   { name: 'Agile', icon: '🏃', level: 'Expert', category: 'tools' }
 ];

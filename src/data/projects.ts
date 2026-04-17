@@ -70,8 +70,8 @@ export const projects: Project[] = [
     description: 'Corporate website for BCK Technology, a leading provider of cashless payment solutions, telemetry, and loyalty systems. Empowering vending, laundromat, carwash, and more with secure, reliable cashless systems backed by local support across 9 countries.',
     longDescription: 'Modern corporate website for BCK Technology showcasing their cashless payment, telemetry, and loyalty solutions. Features interactive maps powered by Leaflet, dynamic content sections highlighting services across vending, laundromat, carwash, and amusement industries. Built with Vue 3 and Vuetify for a polished, responsive experience with seamless API integration for real-time data.',
     image: '/assets/bcktechnology.png',
-    tags: ['Vue 3', 'Vite', 'Vuetify', 'Leaflet', 'API Integration'],
-    liveUrl: 'https://bfranchise.bck.co.ke/',
+    tags: ['Vue 3', 'Vite', 'Vuetify', 'JavaScript', 'Leaflet', 'API Integration'],
+    liveUrl: 'https://bcktechnology.com/',
     githubUrl: 'https://gitlab.com/linetmukai9',
     highlights: [
       '💳 Cashless payment solutions for diverse industries',

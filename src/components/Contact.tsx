@@ -53,7 +53,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-slate-950" ref={ref}>
+    <section id="contact" className="py-20 bg-gray-50 dark:bg-slate-950" ref={ref}>
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -67,7 +67,7 @@ const Contact = () => {
             </span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto rounded-full mb-6" />
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-500 dark:text-slate-400 max-w-2xl mx-auto">
             Have a project in mind? Let's create something amazing together
           </p>
         </motion.div>
@@ -81,8 +81,8 @@ const Contact = () => {
           >
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg blur opacity-25" />
-              <div className="relative bg-slate-900 p-8 rounded-lg border border-slate-800">
-                <h3 className="text-2xl font-bold text-white mb-6">Get In Touch</h3>
+              <div className="relative bg-white dark:bg-slate-900 p-8 rounded-lg border border-gray-200 dark:border-slate-800">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Get In Touch</h3>
 
                 <div className="space-y-4">
                   {contactInfo.map((item, index) => (
@@ -91,30 +91,30 @@ const Contact = () => {
                       initial={{ opacity: 0, y: 10 }}
                       animate={inView ? { opacity: 1, y: 0 } : {}}
                       transition={{ delay: 0.3 + index * 0.1 }}
-                      className="group flex items-center justify-between p-4 bg-slate-800/50 rounded-lg hover:bg-slate-800 transition-all"
+                      className="group flex items-center justify-between p-4 bg-gray-50 dark:bg-slate-800/50 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-800 transition-all"
                     >
                       <div className="flex items-center gap-4">
                         <div className="p-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg">
                           <item.icon className="w-5 h-5 text-white" />
                         </div>
                         <div>
-                          <p className="text-sm text-slate-400">{item.label}</p>
+                          <p className="text-sm text-gray-500 dark:text-slate-400">{item.label}</p>
                           {item.href ? (
                             <a
                               href={item.href}
-                              className="text-white hover:text-cyan-400 transition-colors"
+                              className="text-gray-900 dark:text-white hover:text-cyan-400 transition-colors"
                             >
                               {item.value}
                             </a>
                           ) : (
-                            <p className="text-white">{item.value}</p>
+                            <p className="text-gray-900 dark:text-white">{item.value}</p>
                           )}
                         </div>
                       </div>
                       {item.copyable && (
                         <motion.button
                           onClick={() => copy(item.value, `${item.label} copied!`)}
-                          className="p-2 hover:bg-slate-700 rounded-lg transition-colors"
+                          className="p-2 hover:bg-gray-200 dark:hover:bg-slate-700 rounded-lg transition-colors"
                           whileHover={{ scale: 1.1 }}
                           whileTap={{ scale: 0.9 }}
                           aria-label={`Copy ${item.label}`}
@@ -122,7 +122,7 @@ const Contact = () => {
                           {copied ? (
                             <Check className="w-5 h-5 text-emerald-400" />
                           ) : (
-                            <Copy className="w-5 h-5 text-slate-400" />
+                            <Copy className="w-5 h-5 text-gray-400 dark:text-slate-400" />
                           )}
                         </motion.button>
                       )}
@@ -141,8 +141,8 @@ const Contact = () => {
           >
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur opacity-25" />
-              <div className="relative bg-slate-900 p-8 rounded-lg border border-slate-800">
-                <h3 className="text-2xl font-bold text-white mb-6">Connect With Me</h3>
+              <div className="relative bg-white dark:bg-slate-900 p-8 rounded-lg border border-gray-200 dark:border-slate-800">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Connect With Me</h3>
 
                 <div className="space-y-4">
                   {socialLinks.map((social, index) => (
@@ -158,13 +158,13 @@ const Contact = () => {
                       whileHover={{ scale: 1.02 }}
                     >
                       <div className={`absolute -inset-0.5 bg-gradient-to-r ${social.gradient} rounded-lg blur opacity-25 group-hover:opacity-50 transition-opacity`} />
-                      <div className="relative flex items-center gap-4 p-4 bg-slate-800/50 rounded-lg group-hover:bg-slate-800 transition-all">
+                      <div className="relative flex items-center gap-4 p-4 bg-gray-50 dark:bg-slate-800/50 rounded-lg group-hover:bg-gray-100 dark:group-hover:bg-slate-800 transition-all">
                         <div className={`p-3 bg-gradient-to-r ${social.gradient} rounded-lg`}>
                           <social.icon className="w-5 h-5 text-white" />
                         </div>
                         <div>
-                          <p className="text-sm text-slate-400">{social.label}</p>
-                          <p className="text-white group-hover:text-cyan-400 transition-colors">
+                          <p className="text-sm text-gray-500 dark:text-slate-400">{social.label}</p>
+                          <p className="text-gray-900 dark:text-white group-hover:text-cyan-400 transition-colors">
                             {social.value}
                           </p>
                         </div>
@@ -179,7 +179,7 @@ const Contact = () => {
                   transition={{ delay: 0.7 }}
                   className="mt-8 p-6 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 rounded-lg"
                 >
-                  <p className="text-slate-300 text-center leading-relaxed">
+                  <p className="text-gray-600 dark:text-slate-300 text-center leading-relaxed">
                     <span className="text-cyan-400 font-semibold">Open to opportunities!</span>
                     <br />
                     Looking for a passionate frontend developer who delivers exceptional results?
