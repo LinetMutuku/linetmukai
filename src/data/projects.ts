@@ -24,6 +24,24 @@ export const projects: Project[] = [
   },
   {
     id: 2,
+    title: 'iParish CMS Platform',
+    description: 'Advanced content management system purpose-built for religious organizations. Provides powerful tools for dynamic content creation, multimedia management, and member engagement.',
+    longDescription: 'Advanced CMS platform featuring dynamic content management, sermon library, event calendar, member portal, and comprehensive user role management with TypeScript implementation.',
+    image: '/assets/iparish.png',
+    tags: ['Vue.js', 'Javascript','CSS3', 'CMS', 'JWT', 'RESTful API'],
+    liveUrl: 'https://iparish.bck.co.ke/',
+    githubUrl: 'https://gitlab.com/linetmukai9',
+    highlights: [
+      '📝 Dynamic content management with WYSIWYG editor',
+      '🎤 Sermon library and media management',
+      '📅 Event calendar with registration and reminders',
+      '👤 Member portal with authentication',
+      '🔐 Advanced user role management',
+      '📊 Content analytics and engagement tracking'
+    ]
+  },
+  {
+    id: 3,
     title: 'AfrikaHawa Coffee Traceability PWA',
     description: 'Revolutionary Progressive Web Application transforming Africa\'s coffee supply chain through complete transparency and traceability. Enterprise-grade PWA with offline-first architecture and ML-powered insights.',
     longDescription: 'Enterprise-grade Progressive Web Application revolutionizing Africa\'s coffee supply chain. Features sophisticated offline-first architecture, real-time analytics, role-based access control, and ML-powered quality predictions. Enables complete traceability from seedling to cup with background sync and push notifications.',
@@ -47,30 +65,32 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 3,
-    title: 'iParish CMS Platform',
-    description: 'Advanced content management system purpose-built for religious organizations. Provides powerful tools for dynamic content creation, multimedia management, and member engagement.',
-    longDescription: 'Advanced CMS platform featuring dynamic content management, sermon library, event calendar, member portal, and comprehensive user role management with TypeScript implementation.',
-    image: '/assets/iparish.png',
-    tags: ['Vue.js', 'Javascript','CSS3', 'CMS', 'JWT', 'RESTful API'],
-    liveUrl: 'https://iparish.bck.co.ke/',
+    id: 4,
+    title: 'BCK Technology Website',
+    description: 'Corporate website for BCK Technology, a leading provider of cashless payment solutions, telemetry, and loyalty systems. Empowering vending, laundromat, carwash, and more with secure, reliable cashless systems backed by local support across 9 countries.',
+    longDescription: 'Modern corporate website for BCK Technology showcasing their cashless payment, telemetry, and loyalty solutions. Features interactive maps powered by Leaflet, dynamic content sections highlighting services across vending, laundromat, carwash, and amusement industries. Built with Vue 3 and Vuetify for a polished, responsive experience with seamless API integration for real-time data.',
+    image: '/assets/bcktechnology.png',
+    tags: ['Vue 3', 'Vite', 'Vuetify', 'Leaflet', 'API Integration'],
+    liveUrl: 'https://bfranchise.bck.co.ke/',
     githubUrl: 'https://gitlab.com/linetmukai9',
     highlights: [
-      '📝 Dynamic content management with WYSIWYG editor',
-      '🎤 Sermon library and media management',
-      '📅 Event calendar with registration and reminders',
-      '👤 Member portal with authentication',
-      '🔐 Advanced user role management',
-      '📊 Content analytics and engagement tracking'
+      '💳 Cashless payment solutions for diverse industries',
+      '📡 Telemetry and remote monitoring capabilities',
+      '🎁 Loyalty program management and rewards system',
+      '🗺️ Interactive maps with Leaflet for service coverage visualization',
+      '🌍 Local support across 9 countries',
+      '🔗 RESTful API integration for real-time data',
+      '📱 Fully responsive design across all devices',
+      '⚡ Fast performance with Vue 3 and Vite'
     ]
   },
   {
-    id: 4,
+    id: 5,
     title: 'Jasco Website',
     description: 'Modern corporate website showcasing professional web development with clean design, smooth interactions, and optimized performance. Features contemporary UI/UX patterns and responsive layouts.',
     longDescription: 'Professional corporate website featuring modern design principles, optimized performance, SEO best practices, and smooth user experience across all devices.',
     image: '/assets/jascowebsite.png',
-    tags: ['Vue.js', 'JavaScript', 'CSS3', 'Responsive Design', 'SEO'],
+    tags: ['Vue.js', 'JavaScript', 'CSS3', 'Responsive Design', 'SEO', 'API Integration'],
     liveUrl: 'https://jascocommunications.com/',
     githubUrl: 'https://gitlab.com/linetmukai9',
     highlights: [
@@ -83,7 +103,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     title: 'JennyWealth Honeybee Events',
     description: 'Premium event planning and management platform for a professional events company in Nigeria. Digital hub enabling clients to explore services and book event management for corporate functions, weddings, and private parties.',
     longDescription: 'Digital platform for JennyWealth Honeybee Events Management, a premium event planning company in Nigeria. Features an engaging brand introduction, detailed service descriptions, photo gallery of completed events, client testimonials, and direct contact pathways for booking professional event management services.',
@@ -101,7 +121,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 6,
+    id: 7,
     title: 'Parish Flow Management System',
     description: 'Comprehensive church operations management platform streamlining parish administration through intuitive digital tools. Modern web application handling member management, events, finances, and communication.',
     longDescription: 'Modern web application designed to streamline parish administration with member database management, event coordination, financial tracking, and integrated communication tools.',
