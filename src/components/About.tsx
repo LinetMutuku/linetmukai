@@ -65,9 +65,10 @@ const About = () => {
                 <div className="relative bg-gray-50 dark:bg-slate-800 p-8 rounded-lg border border-gray-200 dark:border-slate-700">
                   <p className="text-lg text-gray-600 dark:text-slate-300 leading-relaxed">
                     With expertise in <span className="text-cyan-400 font-semibold">Vue.js, React, and Next.js</span>,
-                    I transform ideas into pixel-perfect, responsive interfaces. My strong foundation in backend
-                    technologies enables seamless <span className="text-cyan-400 font-semibold">full-stack collaboration</span> and
-                    efficient API integration.
+                    I transform ideas into pixel-perfect, responsive interfaces. Beyond the frontend, I bring
+                    hands-on backend experience with <span className="text-cyan-400 font-semibold">Python, Django, FastAPI, Node.js, Express.js</span>, and
+                    databases like <span className="text-cyan-400 font-semibold">PostgreSQL and MongoDB</span>, enabling
+                    seamless <span className="text-cyan-400 font-semibold">full-stack collaboration</span> and efficient API integration.
                   </p>
                 </div>
               </div>
