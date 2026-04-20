@@ -376,7 +376,7 @@ const Hero = () => {
                 }}
                 transition={{ duration: 2, repeat: Infinity }}
               >
-                Frontend Developer
+                Frontend Engineer
               </motion.span>
             </h2>
             <motion.div
