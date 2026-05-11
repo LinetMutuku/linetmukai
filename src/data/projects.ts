@@ -131,7 +131,6 @@ export const projects: Project[] = [
     longDescription: 'Internal HR leave portal serving Jasco and BCK employees with a structured leave request and approval workflow. Employees can apply for leave, track balances, and view request history; managers and HR get dedicated dashboards for approvals, team calendars, and reporting. Built with Vue.js and Vuetify on the frontend for a polished Material Design experience, backed by a containerized FastAPI service with PostgreSQL for persistence and role-based access control.',
     image: '/assets/leaveapp.png',
     tags: ['Vue.js', 'Vuetify', 'JavaScript', 'Vite', 'Pinia', 'Axios', 'Day.js', 'FastAPI', 'Python', 'PostgreSQL', 'SQLAlchemy', 'Docker', 'JWT'],
-    liveUrl: 'https://leave-portal.jasco.co.ke/',
     githubUrl: 'https://gitlab.com/linetmukai9',
     highlights: [
       '📝 Leave request workflow — apply, edit, cancel, and view request history',
