@@ -28,7 +28,7 @@ export const projects: Project[] = [
     description: 'Advanced content management system purpose-built for religious organizations. Provides powerful tools for dynamic content creation, multimedia management, and member engagement.',
     longDescription: 'Advanced CMS platform featuring dynamic content management, sermon library, event calendar, member portal, and comprehensive user role management with TypeScript implementation.',
     image: '/assets/iparish.png',
-    tags: ['Vue.js', 'Javascript','CSS3', 'CMS', 'JWT', 'RESTful API'],
+    tags: ['Vue.js', 'Javascript', 'Figma', 'CSS3', 'CMS', 'JWT', 'RESTful API'],
     liveUrl: 'https://iparish.bck.co.ke/',
     githubUrl: 'https://gitlab.com/linetmukai9',
     highlights: [
@@ -70,7 +70,7 @@ export const projects: Project[] = [
     description: 'Corporate website for BCK Technology, a leading provider of cashless payment solutions, telemetry, and loyalty systems. Empowering vending, laundromat, carwash, and more with secure, reliable cashless systems backed by local support across 9 countries.',
     longDescription: 'Modern corporate website for BCK Technology showcasing their cashless payment, telemetry, and loyalty solutions. Features interactive maps powered by Leaflet, dynamic content sections highlighting services across vending, laundromat, carwash, and amusement industries. Built with Vue 3 and Vuetify for a polished, responsive experience with seamless API integration for real-time data.',
     image: '/assets/bcktechnology.png',
-    tags: ['Vue 3', 'Vite', 'Vuetify', 'JavaScript', 'Leaflet', 'API Integration'],
+    tags: ['Vue 3', 'Vite', 'Vuetify', 'JavaScript', 'Figma', 'Leaflet', 'API Integration'],
     liveUrl: 'https://bcktechnology.com/',
     githubUrl: 'https://gitlab.com/linetmukai9',
     highlights: [
@@ -90,7 +90,7 @@ export const projects: Project[] = [
     description: 'Modern corporate website showcasing professional web development with clean design, smooth interactions, and optimized performance. Features contemporary UI/UX patterns and responsive layouts.',
     longDescription: 'Professional corporate website featuring modern design principles, optimized performance, SEO best practices, and smooth user experience across all devices.',
     image: '/assets/jascowebsite.png',
-    tags: ['Vue.js', 'JavaScript', 'CSS3', 'Responsive Design', 'SEO', 'API Integration'],
+    tags: ['Vue.js', 'JavaScript', 'Figma', 'CSS3', 'Responsive Design', 'SEO', 'API Integration'],
     liveUrl: 'https://jascocommunications.com/',
     githubUrl: 'https://gitlab.com/linetmukai9',
     highlights: [
@@ -130,7 +130,7 @@ export const projects: Project[] = [
     description: 'HR leave management application for Jasco and BCK employees to request, track, and approve leave online. Streamlines the entire leave workflow from application to approval with role-based dashboards. Currently under active development.',
     longDescription: 'Internal HR leave portal serving Jasco and BCK employees with a structured leave request and approval workflow. Employees can apply for leave, track balances, and view request history; managers and HR get dedicated dashboards for approvals, team calendars, and reporting. Built with Vue.js and Vuetify on the frontend for a polished Material Design experience, backed by a containerized FastAPI service with PostgreSQL for persistence and role-based access control.',
     image: '/assets/leaveapp.png',
-    tags: ['Vue.js', 'Vuetify', 'JavaScript', 'Vite', 'Pinia', 'Axios', 'Day.js', 'FastAPI', 'Python', 'PostgreSQL', 'SQLAlchemy', 'Docker', 'JWT'],
+    tags: ['Vue.js', 'Vuetify', 'JavaScript', 'Figma', 'Vite', 'Pinia', 'Axios', 'Day.js', 'FastAPI', 'Python', 'PostgreSQL', 'SQLAlchemy', 'Docker', 'JWT'],
     githubUrl: 'https://gitlab.com/linetmukai9',
     highlights: [
       '📝 Leave request workflow — apply, edit, cancel, and view request history',
@@ -151,7 +151,7 @@ export const projects: Project[] = [
     description: 'Comprehensive church operations management platform streamlining parish administration through intuitive digital tools. Modern web application handling member management, events, finances, and communication.',
     longDescription: 'Modern web application designed to streamline parish administration with member database management, event coordination, financial tracking, and integrated communication tools.',
     image: '/assets/parishflow.png',
-    tags: ['Vue.js', 'JavaScript','Pinia', 'CSS3', 'RESTful API', 'Responsive Design'],
+    tags: ['Vue.js', 'JavaScript', 'Figma', 'Pinia', 'CSS3', 'RESTful API', 'Responsive Design'],
     githubUrl: 'https://gitlab.com/linetmukai9',
     highlights: [
       '👥 Member database with detailed profile management',
