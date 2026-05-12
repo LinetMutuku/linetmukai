@@ -109,6 +109,7 @@ export const projects: Project[] = [
     longDescription: 'Pure client-side SPA against a FastAPI proxy that aggregates QContact contact-center data into three deeply-instrumented reports: Agent KPI Productivity, Agent Productivity, and Conversation History. Each report has a KPI strip, charts, sortable/searchable table, and an AI Insights drawer. Features live duration ticking for in-progress conversations, multi-select filters (disposition + contact) sourced from the live API, client-side branded PDF/CSV exports respecting active filters, dynamic column discovery, and a smart normalization layer mapping qcontact array-shaped fields (dispositions[0], departments[0], channel_types[0]) to clean frontend types so the rest of the app stays tidy. Backend is FastAPI with Redis caching, WebSockets for live updates, and JWT auth, all containerized with Docker.',
     image: '/assets/gainsurance.png',
     tags: ['React 19', 'TypeScript', 'Vite', 'Tailwind CSS', 'TanStack Query', 'Axios', 'Chart.js', 'jsPDF', 'html2canvas', 'FastAPI', 'Python', 'Redis', 'WebSockets', 'JWT', 'Docker'],
+    liveUrl: 'https://wallboard.jasco.co.ke/',
     githubUrl: 'https://gitlab.com/linetmukai9',
     featured: true,
     highlights: [
