@@ -104,4 +104,18 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && tweaks.classList.contains('open')) closeTweaks();
 });
 
+// AfrikaHawa rotating carousel
+const carouselImgs = document.querySelectorAll('.carousel-img');
+const carouselDots = document.querySelectorAll('.carousel-dot');
+if (carouselImgs.length > 1) {
+  let current = 0;
+  setInterval(() => {
+    carouselImgs[current].classList.remove('active');
+    carouselDots[current]?.classList.remove('active');
+    current = (current + 1) % carouselImgs.length;
+    carouselImgs[current].classList.add('active');
+    carouselDots[current]?.classList.add('active');
+  }, 3500);
+}
+
 applyTweaks(state);
