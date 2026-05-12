@@ -1,41 +1,675 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Linet Mukai Mutuku - Frontend Developer specializing in Vue.js, React, and Next.js. Building exceptional web applications and Progressive Web Apps in Nairobi, Kenya." />
-    <meta name="keywords" content="Frontend Developer, Vue.js, React, Next.js, PWA, Web Development, JavaScript, TypeScript, Nairobi, Kenya" />
-    <meta name="author" content="Linet Mukai Mutuku" />
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-accent="indigo">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linet Mukai Mutuku — Frontend Studio</title>
+<meta name="description" content="Independent frontend studio building Vue, React, and Next.js products from Nairobi.">
+<meta property="og:title" content="Linet Mukai Mutuku — Frontend Studio">
+<meta property="og:description" content="Independent frontend studio building Vue, React, and Next.js products from Nairobi.">
+<meta property="og:type" content="website">
 
-    <meta property="og:title" content="Linet Mukai Mutuku - Frontend Developer" />
-    <meta property="og:description" content="Crafting exceptional digital experiences with Vue.js & React. Specializing in scalable web applications and Progressive Web Apps." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://linetmutuku.dev" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Linet Mukai Mutuku - Frontend Developer" />
-    <meta name="twitter:description" content="Crafting exceptional digital experiences with Vue.js & React" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-
-    <title>Linet Mukai Mutuku - Frontend Developer</title>
-    <meta property="og:image" content="https://bolt.new/static/og_default.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+<link rel="stylesheet" href="style.css">
 </head>
-  <body class="bg-gray-50 dark:bg-slate-950">
-    <script>
-      (function() {
-        var theme = localStorage.getItem('theme');
-        if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-          document.documentElement.classList.add('dark');
-        }
-      })();
-    </script>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<body>
+
+<!-- ANNOUNCEMENT -->
+<div class="announce">
+  <div class="announce-inner">
+    <span class="pill">Now booking</span>
+    <span>Taking on <strong>2 retainers &amp; 1 build</strong> for Q3 2026 ·</span>
+    <a href="#contact">Start a project →</a>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark"><span>L</span><span>M</span></span>
+      <span class="name">Linet Mukai <span class="mute">/ studio</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://gitlab.com/linetmukai9" target="_blank" rel="noopener" class="btn btn-ghost">GitLab</a>
+      <a href="#contact" class="btn btn-primary">Start a project <span class="arrow">→</span></a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-bg">
+    <div class="blob-2"></div>
+  </div>
+  <div class="container hero-inner">
+    <div class="eyebrow reveal">
+      <span class="tag">NEW</span>
+      <span>v3.0 · Independent frontend practice · Nairobi → remote</span>
+    </div>
+
+    <h1 class="hero-title reveal">
+      Frontend that <span class="accent">ships,</span><br>
+      scales, and <span class="underline">stays&nbsp;fast.</span>
+    </h1>
+
+    <p class="hero-sub reveal">
+      I'm <strong>Linet Mukai Mutuku</strong> — a frontend developer building <strong>Vue, React,
+      and Next.js</strong> products for teams across fintech, microfinance, agriculture,
+      and SaaS. Offline-first PWAs, design systems, and dashboards that don't crawl.
+    </p>
+
+    <div class="hero-cta reveal">
+      <a href="#work" class="btn btn-primary">See selected work <span class="arrow">→</span></a>
+      <a href="#contact" class="btn btn-ghost">Book a call</a>
+    </div>
+
+    <div class="hero-stats reveal">
+      <div class="stat">
+        <div class="num">8<span class="unit">+</span></div>
+        <div class="label">Production apps shipped</div>
+      </div>
+      <div class="stat">
+        <div class="num">4<span class="unit">yrs</span></div>
+        <div class="label">Building with Vue &amp; React</div>
+      </div>
+      <div class="stat">
+        <div class="num">12<span class="unit">k</span></div>
+        <div class="label">Daily users on shipped work</div>
+      </div>
+      <div class="stat">
+        <div class="num">9<span class="unit">×</span></div>
+        <div class="label">Countries deployed across</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- LOGO STRIP -->
+<section class="logos reveal">
+  <div class="container">
+    <div class="logos-label">— Trusted by teams at —</div>
+    <div class="logos-marquee">
+      <div class="logos-track">
+        <span class="logo"><span class="glyph"></span>AMFI-K</span>
+        <span class="logo"><span class="glyph"></span>BCK Technology</span>
+        <span class="logo"><span class="glyph"></span>AfrikaHawa</span>
+        <span class="logo"><span class="glyph"></span>GA Insurance</span>
+        <span class="logo"><span class="glyph"></span>Jasco Communications</span>
+        <span class="logo"><span class="glyph"></span>iParish</span>
+        <span class="logo"><span class="glyph"></span>Parish Flow</span>
+        <span class="logo"><span class="glyph"></span>AMFI-K</span>
+        <span class="logo"><span class="glyph"></span>BCK Technology</span>
+        <span class="logo"><span class="glyph"></span>AfrikaHawa</span>
+        <span class="logo"><span class="glyph"></span>GA Insurance</span>
+        <span class="logo"><span class="glyph"></span>Jasco Communications</span>
+        <span class="logo"><span class="glyph"></span>iParish</span>
+        <span class="logo"><span class="glyph"></span>Parish Flow</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK MARQUEE -->
+<section class="stack-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-label"><span class="dot"></span>The Toolkit</div>
+        <h2 class="section-title">A stack that <em>moves</em> with the work.</h2>
+      </div>
+      <p class="section-sub">Four years of choosing the right tool, not the trendiest one. These are the ones I reach for daily.</p>
+    </div>
+
+    <div class="stack-rails reveal">
+      <div class="rail rail-1">
+        <div class="rail-track">
+          <span class="chip featured"><span class="dot"></span>Vue 3 <span class="mono">framework</span></span>
+          <span class="chip"><span class="dot" style="--c:#41b883"></span>Nuxt 3</span>
+          <span class="chip"><span class="dot" style="--c:#61dafb"></span>React 19</span>
+          <span class="chip"><span class="dot" style="--c:#ffffff"></span>Next.js</span>
+          <span class="chip"><span class="dot" style="--c:#3178c6"></span>TypeScript</span>
+          <span class="chip"><span class="dot" style="--c:#ffd54a"></span>JavaScript</span>
+          <span class="chip"><span class="dot" style="--c:#ff3e00"></span>Svelte</span>
+          <span class="chip"><span class="dot" style="--c:#646cff"></span>Vite</span>
+          <span class="chip featured"><span class="dot"></span>Vue 3 <span class="mono">framework</span></span>
+          <span class="chip"><span class="dot" style="--c:#41b883"></span>Nuxt 3</span>
+          <span class="chip"><span class="dot" style="--c:#61dafb"></span>React 19</span>
+          <span class="chip"><span class="dot" style="--c:#ffffff"></span>Next.js</span>
+          <span class="chip"><span class="dot" style="--c:#3178c6"></span>TypeScript</span>
+          <span class="chip"><span class="dot" style="--c:#ffd54a"></span>JavaScript</span>
+          <span class="chip"><span class="dot" style="--c:#ff3e00"></span>Svelte</span>
+          <span class="chip"><span class="dot" style="--c:#646cff"></span>Vite</span>
+        </div>
+      </div>
+
+      <div class="rail rail-2">
+        <div class="rail-track">
+          <span class="chip"><span class="dot" style="--c:#06b6d4"></span>Tailwind CSS</span>
+          <span class="chip featured"><span class="dot"></span>Vuetify 3 <span class="mono">design lib</span></span>
+          <span class="chip"><span class="dot" style="--c:#ff3e00"></span>Pinia</span>
+          <span class="chip"><span class="dot" style="--c:#ff4785"></span>Storybook</span>
+          <span class="chip"><span class="dot" style="--c:#ff6b6b"></span>TanStack Query</span>
+          <span class="chip"><span class="dot" style="--c:#5a29e4"></span>Axios</span>
+          <span class="chip"><span class="dot" style="--c:#ff9a3c"></span>Chart.js</span>
+          <span class="chip"><span class="dot" style="--c:#0c344b"></span>Leaflet</span>
+          <span class="chip"><span class="dot" style="--c:#bd34fe"></span>jsPDF</span>
+          <span class="chip"><span class="dot" style="--c:#06b6d4"></span>Tailwind CSS</span>
+          <span class="chip featured"><span class="dot"></span>Vuetify 3 <span class="mono">design lib</span></span>
+          <span class="chip"><span class="dot" style="--c:#ff3e00"></span>Pinia</span>
+          <span class="chip"><span class="dot" style="--c:#ff4785"></span>Storybook</span>
+          <span class="chip"><span class="dot" style="--c:#ff6b6b"></span>TanStack Query</span>
+          <span class="chip"><span class="dot" style="--c:#5a29e4"></span>Axios</span>
+          <span class="chip"><span class="dot" style="--c:#ff9a3c"></span>Chart.js</span>
+          <span class="chip"><span class="dot" style="--c:#0c344b"></span>Leaflet</span>
+          <span class="chip"><span class="dot" style="--c:#bd34fe"></span>jsPDF</span>
+        </div>
+      </div>
+
+      <div class="rail rail-3">
+        <div class="rail-track">
+          <span class="chip"><span class="dot" style="--c:#5fd97e"></span>PWA</span>
+          <span class="chip"><span class="dot" style="--c:#f0a500"></span>IndexedDB</span>
+          <span class="chip"><span class="dot" style="--c:#ffa336"></span>Service Workers</span>
+          <span class="chip featured"><span class="dot"></span>FastAPI <span class="mono">backend</span></span>
+          <span class="chip"><span class="dot" style="--c:#3776ab"></span>Python</span>
+          <span class="chip"><span class="dot" style="--c:#dc382d"></span>Redis</span>
+          <span class="chip"><span class="dot" style="--c:#336791"></span>PostgreSQL</span>
+          <span class="chip"><span class="dot" style="--c:#2496ed"></span>Docker</span>
+          <span class="chip"><span class="dot" style="--c:#f7b500"></span>JWT</span>
+          <span class="chip"><span class="dot" style="--c:#ff9a3c"></span>WebSockets</span>
+          <span class="chip"><span class="dot" style="--c:#5fd97e"></span>PWA</span>
+          <span class="chip"><span class="dot" style="--c:#f0a500"></span>IndexedDB</span>
+          <span class="chip"><span class="dot" style="--c:#ffa336"></span>Service Workers</span>
+          <span class="chip featured"><span class="dot"></span>FastAPI <span class="mono">backend</span></span>
+          <span class="chip"><span class="dot" style="--c:#3776ab"></span>Python</span>
+          <span class="chip"><span class="dot" style="--c:#dc382d"></span>Redis</span>
+          <span class="chip"><span class="dot" style="--c:#336791"></span>PostgreSQL</span>
+          <span class="chip"><span class="dot" style="--c:#2496ed"></span>Docker</span>
+          <span class="chip"><span class="dot" style="--c:#f7b500"></span>JWT</span>
+          <span class="chip"><span class="dot" style="--c:#ff9a3c"></span>WebSockets</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES (BENTO) -->
+<section class="section container" id="services">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-label"><span class="dot"></span>Services</div>
+      <h2 class="section-title">Four ways I plug in to <em>ship product.</em></h2>
+    </div>
+    <p class="section-sub">Pick a lane — or mix them. Most engagements blend two, and most start with a one-week paid discovery.</p>
+  </div>
+
+  <div class="bento">
+    <div class="bento-card span-3 tall reveal">
+      <div>
+        <div class="bento-icon">⚡</div>
+        <div class="bento-title">Web &amp; PWA Development</div>
+        <div class="bento-desc">Vue 3 &amp; Nuxt, React &amp; Next.js. Offline-first progressive web apps with service workers, IndexedDB, background sync, and push notifications.</div>
+      </div>
+      <div class="bento-tags">
+        <span class="bento-tag">Vue 3</span>
+        <span class="bento-tag">Nuxt</span>
+        <span class="bento-tag">React</span>
+        <span class="bento-tag">Next.js</span>
+        <span class="bento-tag">PWA</span>
+        <span class="bento-tag">Service Workers</span>
+      </div>
+    </div>
+
+    <div class="bento-card span-3 tall reveal">
+      <div>
+        <div class="bento-icon">◇</div>
+        <div class="bento-title">Design Systems &amp; Component Libraries</div>
+        <div class="bento-desc">Tokens, accessible primitives, Storybook docs, and contributor handbooks. WCAG-AA by default — so the team ships consistently, fast.</div>
+      </div>
+      <div class="viz-tags">
+        <span class="lit">Button</span><span class="lit">Input</span><span class="lit">Select</span>
+        <span>Dialog</span><span>Toast</span><span>Tabs</span><span>Combobox</span>
+        <span>DataTable</span><span>Calendar</span><span>+ 72 more</span>
+      </div>
+    </div>
+
+    <div class="bento-card span-2 reveal">
+      <div class="bento-icon">▦</div>
+      <div class="bento-title">Dashboards &amp; Analytics</div>
+      <div class="bento-desc">Real-time KPI dashboards, charts, filters, and branded PDF/CSV exports. TanStack Query + Chart.js.</div>
+    </div>
+
+    <div class="bento-card span-2 reveal">
+      <div class="bento-icon">⌬</div>
+      <div class="bento-title">Performance &amp; Audits</div>
+      <div class="bento-desc">Lighthouse &amp; Core Web Vitals work, route-level code-splitting, caching strategies. Average p95 wins: 40–60%.</div>
+      <div class="viz-stack">
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      </div>
+    </div>
+
+    <div class="bento-card span-2 reveal">
+      <div class="bento-icon">⌥</div>
+      <div class="bento-title">Frontend Architecture</div>
+      <div class="bento-desc">Migrations off legacy stacks, monorepo setup, state management, and shipping rituals that hold.</div>
+      <div class="bento-tags">
+        <span class="bento-tag">Pinia</span>
+        <span class="bento-tag">TanStack</span>
+        <span class="bento-tag">Vite</span>
+        <span class="bento-tag">Turborepo</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED WORK -->
+<section class="section container" id="work">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-label"><span class="dot"></span>Selected Work</div>
+      <h2 class="section-title">Three builds I'd <em>walk you through.</em></h2>
+    </div>
+    <p class="section-sub">Featured case studies — followed by the rest of the catalogue. All live, all shipped, all in production.</p>
+  </div>
+
+  <div class="featured-list">
+
+    <!-- FEATURE 1: AMFI-K -->
+    <article class="feature-card reveal">
+      <div class="feature-body">
+        <div class="feature-meta">
+          <span class="badge">2026 · Featured</span>
+          <span>Microfinance · Kenya</span>
+        </div>
+        <h3 class="feature-title">AMFI-K Data Hub</h3>
+        <p class="feature-desc">
+          Centralised platform digitising the Association of Microfinance Institutions of
+          Kenya's data collection and member management — surveys, payments, audit logs,
+          and approvals in one place.
+        </p>
+        <ul class="feature-highlights">
+          <li>Structured data-collection periods with deadlines</li>
+          <li>Custom survey builder with drag-and-drop</li>
+          <li>Organisation registration &amp; approval workflows</li>
+          <li>OTP auth + JWT + role-based routing</li>
+          <li>Payment tracking and receipt generation</li>
+          <li>Comprehensive audit logs &amp; compliance</li>
+        </ul>
+        <div class="feature-tags">
+          <span class="feature-tag">Vue 3</span>
+          <span class="feature-tag">Vuetify 3</span>
+          <span class="feature-tag">Pinia</span>
+          <span class="feature-tag">Vite</span>
+        </div>
+        <div class="feature-actions">
+          <a href="https://amfi.bck.co.ke/" target="_blank" rel="noopener" class="link-arrow">Visit live <span class="arrow">↗</span></a>
+        </div>
+      </div>
+      <div class="feature-thumb">
+        <div class="img-slot" data-project="amfi">
+          <!-- Replace with: <img src="/assets/amfi.png" alt="AMFI-K Data Hub"> -->
+          <div class="img-meta">
+            <div class="img-name">AMFI-K Data Hub</div>
+            <div class="img-hint">Drop screenshot here · /assets/amfi.png</div>
+          </div>
+          <div class="img-dim">1600 × 1000 · Recommended</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- FEATURE 2: AfrikaHawa -->
+    <article class="feature-card reverse reveal">
+      <div class="feature-body">
+        <div class="feature-meta">
+          <span class="badge">2025 · Featured</span>
+          <span>Agriculture · PWA · ML</span>
+        </div>
+        <h3 class="feature-title">AfrikaHawa Coffee Traceability PWA</h3>
+        <p class="feature-desc">
+          Enterprise-grade Progressive Web App revolutionising Africa's coffee supply chain.
+          Offline-first architecture, real-time analytics, role-based access, and ML-powered
+          quality &amp; yield predictions — from seedling to cup.
+        </p>
+        <ul class="feature-highlights">
+          <li>Complete traceability — harvest to batch</li>
+          <li>Installable PWA, native-app feel</li>
+          <li>Background sync with automatic retry</li>
+          <li>ML quality &amp; yield predictions</li>
+          <li>QR code generation for batch tracking</li>
+          <li>Multi-role analytics dashboards</li>
+        </ul>
+        <div class="feature-tags">
+          <span class="feature-tag">Vue 3</span>
+          <span class="feature-tag">PWA</span>
+          <span class="feature-tag">IndexedDB</span>
+          <span class="feature-tag">Service Workers</span>
+          <span class="feature-tag">Chart.js</span>
+          <span class="feature-tag">ML</span>
+        </div>
+        <div class="feature-actions">
+          <a href="https://afrikahawa-pwa.bck.co.ke/" target="_blank" rel="noopener" class="link-arrow">Visit live <span class="arrow">↗</span></a>
+        </div>
+      </div>
+      <div class="feature-thumb">
+        <div class="img-slot" data-project="afrikahawa">
+          <!-- Replace with: <img src="/assets/afrikahawa1.png" alt="AfrikaHawa PWA"> -->
+          <div class="img-meta">
+            <div class="img-name">AfrikaHawa Coffee PWA</div>
+            <div class="img-hint">Drop screenshot here · /assets/afrikahawa1.png</div>
+          </div>
+          <div class="img-dim">1600 × 1000 · Recommended</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- FEATURE 3: GA Insurance -->
+    <article class="feature-card reveal">
+      <div class="feature-body">
+        <div class="feature-meta">
+          <span class="badge">2025 · Featured</span>
+          <span>Insurance · Analytics</span>
+        </div>
+        <h3 class="feature-title">GA Insurance Report Analytics</h3>
+        <p class="feature-desc">
+          Real-time call-centre analytics dashboard surfacing agent productivity and
+          conversation history from QContact. Board-room-ready reporting with
+          deterministic AI insights and one-click branded PDF/CSV exports.
+        </p>
+        <ul class="feature-highlights">
+          <li>Live duration ticking via tab-aware hook</li>
+          <li>Deterministic AI Insights drawer</li>
+          <li>Branded PDF exports with autoTable detail</li>
+          <li>Multi-select filters across KPIs &amp; downloads</li>
+          <li>FastAPI proxy, Redis cache, JWT auth</li>
+          <li>TanStack Query v5 + WebSockets</li>
+        </ul>
+        <div class="feature-tags">
+          <span class="feature-tag">React 19</span>
+          <span class="feature-tag">TypeScript</span>
+          <span class="feature-tag">TanStack</span>
+          <span class="feature-tag">Chart.js</span>
+          <span class="feature-tag">FastAPI</span>
+          <span class="feature-tag">Docker</span>
+        </div>
+        <div class="feature-actions">
+          <a href="https://gitlab.com/linetmukai9" target="_blank" rel="noopener" class="link-arrow">View source <span class="arrow">↗</span></a>
+        </div>
+      </div>
+      <div class="feature-thumb">
+        <div class="img-slot" data-project="gainsurance">
+          <!-- Replace with: <img src="/assets/gainsurance.png" alt="GA Insurance Analytics"> -->
+          <div class="img-meta">
+            <div class="img-name">GA Insurance Analytics</div>
+            <div class="img-hint">Drop screenshot here · /assets/gainsurance.png</div>
+          </div>
+          <div class="img-dim">1600 × 1000 · Recommended</div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- MORE WORK -->
+<section class="section container">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-label"><span class="dot"></span>More Work</div>
+      <h2 class="section-title">The rest of the <em>catalogue.</em></h2>
+    </div>
+    <p class="section-sub">Five more apps in production — corporate sites, CMS platforms, internal tools.</p>
+  </div>
+
+  <div class="more-work">
+    <article class="work-card reveal">
+      <div class="meta">
+        <span>2025 · CMS</span>
+        <span class="status live">● Live</span>
+      </div>
+      <h3>iParish CMS Platform</h3>
+      <p>Advanced CMS purpose-built for religious organisations — dynamic content, sermon library, member portal, and role management.</p>
+      <div class="tags">
+        <span>Vue.js</span><span>JavaScript</span><span>CSS3</span><span>JWT</span><span>REST</span>
+      </div>
+      <div class="footer">
+        <span style="font-family:var(--ff-mono);font-size:11px;color:var(--fg-mute)">— 06</span>
+        <a href="https://iparish.bck.co.ke/" target="_blank" rel="noopener">Visit <span>↗</span></a>
+      </div>
+    </article>
+
+    <article class="work-card reveal">
+      <div class="meta">
+        <span>2024 · Corporate</span>
+        <span class="status live">● Live</span>
+      </div>
+      <h3>BCK Technology Website</h3>
+      <p>Corporate site for cashless payment, telemetry &amp; loyalty solutions across 9 countries. Interactive Leaflet maps and live API integration.</p>
+      <div class="tags">
+        <span>Vue 3</span><span>Vuetify</span><span>Vite</span><span>Leaflet</span><span>API</span>
+      </div>
+      <div class="footer">
+        <span style="font-family:var(--ff-mono);font-size:11px;color:var(--fg-mute)">— 04</span>
+        <a href="https://bcktechnology.com/" target="_blank" rel="noopener">Visit <span>↗</span></a>
+      </div>
+    </article>
+
+    <article class="work-card reveal">
+      <div class="meta">
+        <span>2026 · Internal HR</span>
+        <span class="status dev">● In development</span>
+      </div>
+      <h3>Jasco HR Leave Portal</h3>
+      <p>HR leave management for Jasco &amp; BCK employees. Multi-level approvals, leave balances, and team calendars on Vue + FastAPI + PostgreSQL.</p>
+      <div class="tags">
+        <span>Vue.js</span><span>Vuetify</span><span>Pinia</span><span>FastAPI</span><span>PostgreSQL</span>
+      </div>
+      <div class="footer">
+        <span style="font-family:var(--ff-mono);font-size:11px;color:var(--fg-mute)">— 07</span>
+        <a href="https://leave-portal.jasco.co.ke/" target="_blank" rel="noopener">Visit <span>↗</span></a>
+      </div>
+    </article>
+
+    <article class="work-card reveal">
+      <div class="meta">
+        <span>2024 · Corporate</span>
+        <span class="status live">● Live</span>
+      </div>
+      <h3>Jasco Communications</h3>
+      <p>Modern corporate website with SEO best practices, smooth micro-interactions, and a brand-consistent design system across all breakpoints.</p>
+      <div class="tags">
+        <span>Vue.js</span><span>JavaScript</span><span>CSS3</span><span>SEO</span><span>API</span>
+      </div>
+      <div class="footer">
+        <span style="font-family:var(--ff-mono);font-size:11px;color:var(--fg-mute)">— 05</span>
+        <a href="https://jascocommunications.com/" target="_blank" rel="noopener">Visit <span>↗</span></a>
+      </div>
+    </article>
+
+    <article class="work-card reveal">
+      <div class="meta">
+        <span>2024 · Operations</span>
+        <span class="status live">● Live</span>
+      </div>
+      <h3>Parish Flow Management</h3>
+      <p>Church operations platform — member database, event coordination, financial tracking, and integrated communication tools.</p>
+      <div class="tags">
+        <span>Vue.js</span><span>Pinia</span><span>CSS3</span><span>REST</span>
+      </div>
+      <div class="footer">
+        <span style="font-family:var(--ff-mono);font-size:11px;color:var(--fg-mute)">— 08</span>
+        <a href="https://gitlab.com/linetmukai9" target="_blank" rel="noopener">Source <span>↗</span></a>
+      </div>
+    </article>
+
+    <article class="work-card reveal" style="background:linear-gradient(135deg, var(--bg-card), var(--bg-2));">
+      <div class="meta">
+        <span>Up next</span>
+        <span class="status">soon™</span>
+      </div>
+      <h3>Your project here?</h3>
+      <p>Currently booking 2 retainers and 1 fixed-scope build for Q3 2026. If your team needs a frontend partner who can also think in systems — let's talk.</p>
+      <div class="tags">
+        <span>Vue</span><span>React</span><span>Next.js</span><span>PWA</span><span>Design Systems</span>
+      </div>
+      <div class="footer">
+        <span style="font-family:var(--ff-mono);font-size:11px;color:var(--fg-mute)">— 09</span>
+        <a href="#contact">Get in touch <span>→</span></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section container" id="process">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-label"><span class="dot"></span>Process</div>
+      <h2 class="section-title">How an engagement <em>actually goes.</em></h2>
+    </div>
+    <p class="section-sub">No mystery, no slide deck of buzzwords. Four phases, paid discovery up front, weekly demos throughout.</p>
+  </div>
+
+  <div class="process reveal">
+    <div class="process-step">
+      <div class="step-num">01 · Discovery</div>
+      <h3>Listen &amp; map</h3>
+      <p>A paid one-week discovery: I read the codebase, interview the team, audit the product, and produce a written tech plan with risks and budget.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">02 · Shape</div>
+      <h3>Prototype &amp; align</h3>
+      <p>Working prototypes — not Figma flat-files — for the critical flows. Designed alongside your team, in real code, on real devices.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">03 · Build</div>
+      <h3>Ship in slices</h3>
+      <p>Weekly increments behind a feature flag. Storybook for the design system, e2e tests for the workflows, Lighthouse budgets in CI.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">04 · Handover</div>
+      <h3>Document &amp; teach</h3>
+      <p>Written architecture notes, recorded walkthroughs, and a 30-day post-launch retainer included. Your team owns the codebase, fully.</p>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="section reveal" id="about">
+  <div class="quote">
+    <span class="quote-mark">"</span>
+    <p class="quote-body">
+      I build web interfaces that feel <em>quietly fast</em> and unmistakably crafted — for teams in fintech,
+      microfinance, agriculture, and SaaS. Four years in, mostly remote, always shipping.
+    </p>
+    <div class="quote-author">
+      <b>Linet Mukai Mutuku</b> &nbsp;·&nbsp; Frontend Developer &nbsp;·&nbsp; Nairobi, Kenya
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section container" id="contact">
+  <div class="cta reveal">
+    <div class="cta-inner">
+      <div class="cta-eyebrow">Available · Q3 2026</div>
+      <h2 class="cta-title">Have a project worth <em>shipping?</em></h2>
+      <p class="cta-sub">
+        A quick email, a 30-minute intro call, and you'll have a written proposal within a week.
+        No sales funnels, no NDAs to read three docs in.
+      </p>
+      <div class="cta-actions">
+        <a href="mailto:hello@linetmutuku.dev" class="btn btn-primary">hello@linetmutuku.dev <span class="arrow">→</span></a>
+        <a href="https://calendly.com/" target="_blank" rel="noopener" class="btn btn-ghost">Book a 30-min call</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="container footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="#top">
+        <span class="brand-mark"><span>L</span><span>M</span></span>
+        <span class="name">Linet Mukai <span class="mute">/ studio</span></span>
+      </a>
+      <p>An independent frontend practice building Vue, React, and Next.js products for teams worldwide.</p>
+      <span class="location">Nairobi, Kenya · available Q3 2026</span>
+    </div>
+    <div class="footer-col">
+      <h4>Work</h4>
+      <ul>
+        <li><a href="https://amfi.bck.co.ke/" target="_blank" rel="noopener">AMFI-K <span class="ext">↗</span></a></li>
+        <li><a href="https://afrikahawa-pwa.bck.co.ke/" target="_blank" rel="noopener">AfrikaHawa <span class="ext">↗</span></a></li>
+        <li><a href="https://iparish.bck.co.ke/" target="_blank" rel="noopener">iParish <span class="ext">↗</span></a></li>
+        <li><a href="https://bcktechnology.com/" target="_blank" rel="noopener">BCK Tech <span class="ext">↗</span></a></li>
+        <li><a href="https://jascocommunications.com/" target="_blank" rel="noopener">Jasco <span class="ext">↗</span></a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Web &amp; PWA</a></li>
+        <li><a href="#services">Design Systems</a></li>
+        <li><a href="#services">Dashboards</a></li>
+        <li><a href="#services">Performance</a></li>
+        <li><a href="#services">Architecture</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Elsewhere</h4>
+      <ul>
+        <li><a href="mailto:hello@linetmutuku.dev">Email <span class="ext">↗</span></a></li>
+        <li><a href="https://gitlab.com/linetmukai9" target="_blank" rel="noopener">GitLab <span class="ext">↗</span></a></li>
+        <li><a href="https://www.linkedin.com/in/linet-mukai/" target="_blank" rel="noopener">LinkedIn <span class="ext">↗</span></a></li>
+        <li><a href="https://github.com/linetmukai" target="_blank" rel="noopener">GitHub <span class="ext">↗</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Linet Mukai Mutuku · All rights reserved</div>
+    <div class="made-with">Designed &amp; built in Nairobi <em>·</em> Press <span style="font-family:var(--ff-mono)">T</span> for tweaks</div>
+  </div>
+</footer>
+
+<!-- TWEAKS PANEL -->
+<aside class="tweaks" aria-label="Tweaks">
+  <div class="tweaks-header">
+    <span class="tweaks-title">Tweaks</span>
+    <button class="tweaks-close" aria-label="Close">✕</button>
+  </div>
+  <div class="tweak-row" data-tweak="theme">
+    <div class="tweak-label">Theme</div>
+    <div class="tweak-segments">
+      <button data-v="dark">Dark</button>
+      <button data-v="light">Light</button>
+    </div>
+  </div>
+  <div class="tweak-row">
+    <div class="tweak-label">Accent</div>
+    <div class="tweak-swatches">
+      <button class="tweak-swatch" data-c="indigo" aria-label="Indigo"></button>
+      <button class="tweak-swatch" data-c="violet" aria-label="Violet"></button>
+      <button class="tweak-swatch" data-c="periwinkle" aria-label="Periwinkle"></button>
+      <button class="tweak-swatch" data-c="electric" aria-label="Electric"></button>
+      <button class="tweak-swatch" data-c="plum" aria-label="Plum"></button>
+    </div>
+  </div>
+  <div class="tweak-row">
+    <div class="tweak-label" style="opacity:0.6">Press <span style="font-family:var(--ff-mono)">T</span> to toggle</div>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
 </html>
