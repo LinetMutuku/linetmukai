@@ -127,6 +127,27 @@ export const projects: Project[] = [
   },
   {
     id: 7,
+    title: 'ATG — Access to Greatness',
+    description: 'Digital infrastructure for African sports organisations. One platform covering governance, payments, athlete management, and competition systems for athletes, clubs, federations, and national bodies across Africa.',
+    longDescription: 'ATG is a modern sports management platform built to serve athletes, clubs, federations, and national bodies across Africa. Athletes get a verified digital identity, licensing tools, AI-powered scouting exposure, and a single career tracker. Clubs and academies get a full registry, CRM, financial tooling, and live competition management. National federations get a governance cloud built to FIFA and CAF standards — elections, compliance, and reporting all included. M-Pesa and Airtel Money ready out of the box, mobile-first, and designed to scale from a single club to a continental federation.',
+    image: '/assets/atg.png',
+    tags: ['Vue 3', 'Vuetify 4', 'Vite', 'JavaScript', 'M-Pesa', 'Airtel Money', 'FIFA/CAF Compliance'],
+    liveUrl: 'https://sportshub.bck.co.ke/',
+    githubUrl: 'https://gitlab.com/linetmukai9',
+    status: 'poc',
+    highlights: [
+      '🏟️ One platform for athletes, clubs, federations, and national bodies across Africa',
+      '🪪 Verified digital identity, licensing tools, and AI-powered scouting exposure for athletes',
+      '🏦 M-Pesa and Airtel Money ready out of the box — no third-party plugins',
+      '🏛️ Governance cloud built to FIFA and CAF standards — elections, compliance, reporting',
+      '📊 Executive dashboards, deep analytics, and audit-ready compliance reporting',
+      '⚽ Multi-sport coverage: Soccer, Rugby, Basketball, Athletics, Tennis, Swimming, Volleyball, Cycling',
+      '📱 Mobile-first, responsive design built with Vue 3, Vuetify 4, and Vite',
+      '🌍 Designed to scale from a single club to a continental federation'
+    ]
+  },
+  {
+    id: 8,
     title: 'Jasco HR Leave Portal',
     description: 'HR leave management application for Jasco and BCK employees to request, track, and approve leave online. Streamlines the entire leave workflow from application to approval with role-based dashboards. Currently under active development.',
     longDescription: 'Internal HR leave portal serving Jasco and BCK employees with a structured leave request and approval workflow. Employees can apply for leave, track balances, and view request history; managers and HR get dedicated dashboards for approvals, team calendars, and reporting. Built with Vue.js and Vuetify on the frontend for a polished Material Design experience, backed by a containerized FastAPI service with PostgreSQL for persistence and role-based access control.',
@@ -147,7 +168,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 8,
+    id: 9,
     title: 'Parish Flow Management System',
     description: 'Comprehensive church operations management platform streamlining parish administration through intuitive digital tools. Modern web application handling member management, events, finances, and communication.',
     longDescription: 'Modern web application designed to streamline parish administration with member database management, event coordination, financial tracking, and integrated communication tools.',

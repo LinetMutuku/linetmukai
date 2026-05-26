@@ -4,12 +4,13 @@ export interface Project {
   description: string;
   longDescription: string;
   image: string;
-  images?: string[]; // For projects with multiple rotating images
+  images?: string[];
   tags: string[];
   liveUrl?: string;
   githubUrl: string;
   featured?: boolean;
   highlights?: string[];
+  status?: 'live' | 'poc' | 'development';
 }
 
 export interface Skill {
