@@ -1074,25 +1074,6 @@ img { display: block; max-width: 100%; }
 }
 .work-card .footer a:hover { color: var(--accent); gap: 9px; }
 
-.visit-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 16px;
-  background: var(--accent);
-  color: var(--accent-fg) !important;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  transition: transform 0.2s, box-shadow 0.2s, gap 0.2s !important;
-}
-.visit-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px var(--accent-soft);
-  gap: 12px !important;
-  color: var(--accent-fg) !important;
-}
 
 @media (max-width: 980px) { .more-work { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 620px) { .more-work { grid-template-columns: 1fr; } }
