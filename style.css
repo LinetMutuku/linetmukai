@@ -756,16 +756,31 @@ img { display: block; max-width: 100%; }
 .link-arrow {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  padding: 11px 22px;
+  background: var(--accent);
+  color: var(--accent-fg);
   font-size: 14px;
-  color: var(--fg);
-  font-weight: 500;
-  padding: 8px 0;
-  border-bottom: 1px solid var(--line-strong);
-  transition: color 0.2s, gap 0.2s;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  border-radius: 999px;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, gap 0.2s ease;
+  position: relative;
+  overflow: hidden;
 }
-.link-arrow:hover { color: var(--accent); border-color: var(--accent); gap: 12px; }
-.link-arrow .arrow { transition: transform 0.2s; }
+.link-arrow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.15);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.link-arrow:hover { transform: translateY(-2px); box-shadow: 0 8px 28px var(--accent-soft); gap: 14px; color: var(--accent-fg); }
+.link-arrow:hover::before { opacity: 1; }
+.link-arrow .arrow { font-size: 16px; transition: transform 0.2s; }
+.link-arrow:hover .arrow { transform: translate(2px, -2px); }
 
 /* ============ IMAGE SLOT (placeholder for real images) ============ */
 .img-slot {
